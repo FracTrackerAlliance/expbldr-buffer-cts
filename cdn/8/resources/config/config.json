@@ -1569,517 +1569,1004 @@
       "config": {
         "layersConfig": [
           {
-            "id": "dataSource_1-db71d9a369b1484bb902acb1b313eab7-1",
-            "name": "All Arlington Schools",
+            "id": "dataSource_1-19e269abeb3-layer-19-2",
+            "name": "Arlington Schools",
             "useDataSource": {
-              "dataSourceId": "dataSource_1-db71d9a369b1484bb902acb1b313eab7",
-              "mainDataSourceId": "dataSource_1-db71d9a369b1484bb902acb1b313eab7",
+              "dataSourceId": "dataSource_1-19e269abeb3-layer-19",
+              "mainDataSourceId": "dataSource_1-19e269abeb3-layer-19",
               "rootDataSourceId": "dataSource_1",
               "fields": [
-                "OBJECTID",
-                "Name",
-                "Address",
-                "Town",
-                "State",
-                "NEAR_FID",
-                "NEAR_FID_Wells_TXSP",
-                "WellCt_2mi",
-                "WellCt_1mi",
-                "WellCt_halfmi",
-                "Pad_1",
-                "Pad_2",
-                "Pad_3",
-                "Pad_4",
-                "Pad_5",
-                "Pad_6",
-                "Pad_7",
-                "Pad_8",
-                "Pad_9",
-                "Pad_10",
-                "Pad_11",
-                "Pad_12",
-                "Pad_13"
+                "latitude",
+                "longitude",
+                "name",
+                "address",
+                "town",
+                "state",
+                "drilled_wells_2mi",
+                "drilled_wells_1mi",
+                "drilled_wells_halfmi",
+                "plugged_wells_2mi",
+                "plugged_wells_1mi",
+                "plugged_wells_halfmi",
+                "notdrilled_wells_2mi",
+                "notdrilled_wells_1mi",
+                "notdrilled_wells_halfmi",
+                "total_wells_2mi",
+                "total_wells_1mi",
+                "total_wells_halfmi",
+                "arlington_wellpads_2mi",
+                "new_wellpads_2mi",
+                "total_wellpads_2mi",
+                "arlington_pad_1",
+                "arlington_pad_2",
+                "arlington_pad_3",
+                "arlington_pad_4",
+                "arlington_pad_5",
+                "arlington_pad_6",
+                "arlington_pad_7",
+                "arlington_pad_8",
+                "arlington_pad_9",
+                "arlington_pad_10",
+                "other_pad_1",
+                "other_pad_2",
+                "other_pad_3",
+                "other_pad_4",
+                "other_pad_5",
+                "other_pad_6",
+                "other_pad_7",
+                "other_pad_8",
+                "other_pad_9",
+                "other_pad_10"
               ]
             },
             "allFields": [
               {
-                "jimuName": "OBJECTID",
-                "name": "OBJECTID",
+                "jimuName": "fid",
+                "name": "fid",
                 "type": "NUMBER",
                 "esriType": "esriFieldTypeOID",
-                "alias": "ObjectId",
+                "alias": "fid",
                 "fieldFormat": {
                   "type": "number",
                   "useGrouping": "never"
-                },
-                "format": {
-                  "digitSeparator": false,
-                  "places": 0
                 }
               },
               {
-                "jimuName": "Name",
-                "name": "Name",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "Name"
-              },
-              {
-                "jimuName": "Address",
-                "name": "Address",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "Address"
-              },
-              {
-                "jimuName": "Town",
-                "name": "Town",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "Town"
-              },
-              {
-                "jimuName": "State",
-                "name": "State",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "State"
-              },
-              {
-                "jimuName": "NEAR_FID",
-                "name": "NEAR_FID",
+                "jimuName": "latitude",
+                "name": "latitude",
                 "type": "NUMBER",
                 "esriType": "esriFieldTypeDouble",
-                "alias": "NEAR_FID",
-                "fieldFormat": {
-                  "type": "number",
-                  "maximumFractionDigits": 6,
-                  "minimumFractionDigits": 6,
-                  "style": "decimal",
-                  "useGrouping": "never"
-                }
-              },
-              {
-                "jimuName": "NEAR_FID_Wells_TXSP",
-                "name": "NEAR_FID_Wells_TXSP",
-                "type": "NUMBER",
-                "esriType": "esriFieldTypeInteger",
-                "alias": "NEAR_FID_Wells_TXSP",
+                "alias": "latitude",
                 "fieldFormat": {
                   "type": "number",
                   "maximumFractionDigits": 2,
-                  "minimumFractionDigits": 0,
+                  "minimumFractionDigits": 2,
                   "style": "decimal",
-                  "useGrouping": "never"
+                  "useGrouping": "always"
                 }
               },
               {
-                "jimuName": "WellCt_2mi",
-                "name": "WellCt_2mi",
+                "jimuName": "longitude",
+                "name": "longitude",
                 "type": "NUMBER",
-                "esriType": "esriFieldTypeSmallInteger",
-                "alias": "WellCt_2mi",
+                "esriType": "esriFieldTypeDouble",
+                "alias": "longitude",
                 "fieldFormat": {
                   "type": "number",
                   "maximumFractionDigits": 2,
-                  "minimumFractionDigits": 0,
+                  "minimumFractionDigits": 2,
                   "style": "decimal",
-                  "useGrouping": "never"
+                  "useGrouping": "always"
                 }
               },
               {
-                "jimuName": "WellCt_1mi",
-                "name": "WellCt_1mi",
+                "jimuName": "name",
+                "name": "name",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "name"
+              },
+              {
+                "jimuName": "address",
+                "name": "address",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "address"
+              },
+              {
+                "jimuName": "town",
+                "name": "town",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "town"
+              },
+              {
+                "jimuName": "state",
+                "name": "state",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "state"
+              },
+              {
+                "jimuName": "drilled_wells_2mi",
+                "name": "drilled_wells_2mi",
                 "type": "NUMBER",
-                "esriType": "esriFieldTypeSmallInteger",
-                "alias": "WellCt_1mi",
+                "esriType": "esriFieldTypeBigInteger",
+                "alias": "drilled_wells_2mi",
                 "fieldFormat": {
                   "type": "number",
-                  "maximumFractionDigits": 2,
+                  "maximumFractionDigits": 0,
                   "minimumFractionDigits": 0,
                   "style": "decimal",
-                  "useGrouping": "never"
+                  "useGrouping": "always"
                 }
               },
               {
-                "jimuName": "WellCt_halfmi",
-                "name": "WellCt_halfmi",
+                "jimuName": "drilled_wells_1mi",
+                "name": "drilled_wells_1mi",
                 "type": "NUMBER",
-                "esriType": "esriFieldTypeSmallInteger",
-                "alias": "WellCt_halfmi",
+                "esriType": "esriFieldTypeBigInteger",
+                "alias": "drilled_wells_1mi",
                 "fieldFormat": {
                   "type": "number",
-                  "maximumFractionDigits": 2,
+                  "maximumFractionDigits": 0,
                   "minimumFractionDigits": 0,
                   "style": "decimal",
-                  "useGrouping": "never"
+                  "useGrouping": "always"
                 }
               },
               {
-                "jimuName": "Pad_1",
-                "name": "Pad_1",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "Pad 1"
+                "jimuName": "drilled_wells_halfmi",
+                "name": "drilled_wells_halfmi",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeBigInteger",
+                "alias": "drilled_wells_halfmi",
+                "fieldFormat": {
+                  "type": "number",
+                  "maximumFractionDigits": 0,
+                  "minimumFractionDigits": 0,
+                  "style": "decimal",
+                  "useGrouping": "always"
+                }
               },
               {
-                "jimuName": "Pad_2",
-                "name": "Pad_2",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "Pad 2"
+                "jimuName": "plugged_wells_2mi",
+                "name": "plugged_wells_2mi",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeBigInteger",
+                "alias": "plugged_wells_2mi",
+                "fieldFormat": {
+                  "type": "number",
+                  "maximumFractionDigits": 0,
+                  "minimumFractionDigits": 0,
+                  "style": "decimal",
+                  "useGrouping": "always"
+                }
               },
               {
-                "jimuName": "Pad_3",
-                "name": "Pad_3",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "Pad 3"
+                "jimuName": "plugged_wells_1mi",
+                "name": "plugged_wells_1mi",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeBigInteger",
+                "alias": "plugged_wells_1mi",
+                "fieldFormat": {
+                  "type": "number",
+                  "maximumFractionDigits": 0,
+                  "minimumFractionDigits": 0,
+                  "style": "decimal",
+                  "useGrouping": "always"
+                }
               },
               {
-                "jimuName": "Pad_4",
-                "name": "Pad_4",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "Pad 4"
+                "jimuName": "plugged_wells_halfmi",
+                "name": "plugged_wells_halfmi",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeBigInteger",
+                "alias": "plugged_wells_halfmi",
+                "fieldFormat": {
+                  "type": "number",
+                  "maximumFractionDigits": 0,
+                  "minimumFractionDigits": 0,
+                  "style": "decimal",
+                  "useGrouping": "always"
+                }
               },
               {
-                "jimuName": "Pad_5",
-                "name": "Pad_5",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "Pad 5"
+                "jimuName": "notdrilled_wells_2mi",
+                "name": "notdrilled_wells_2mi",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeBigInteger",
+                "alias": "notdrilled_wells_2mi",
+                "fieldFormat": {
+                  "type": "number",
+                  "maximumFractionDigits": 0,
+                  "minimumFractionDigits": 0,
+                  "style": "decimal",
+                  "useGrouping": "always"
+                }
               },
               {
-                "jimuName": "Pad_6",
-                "name": "Pad_6",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "Pad 6"
+                "jimuName": "notdrilled_wells_1mi",
+                "name": "notdrilled_wells_1mi",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeBigInteger",
+                "alias": "notdrilled_wells_1mi",
+                "fieldFormat": {
+                  "type": "number",
+                  "maximumFractionDigits": 0,
+                  "minimumFractionDigits": 0,
+                  "style": "decimal",
+                  "useGrouping": "always"
+                }
               },
               {
-                "jimuName": "Pad_7",
-                "name": "Pad_7",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "Pad 7"
+                "jimuName": "notdrilled_wells_halfmi",
+                "name": "notdrilled_wells_halfmi",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeBigInteger",
+                "alias": "notdrilled_wells_halfmi",
+                "fieldFormat": {
+                  "type": "number",
+                  "maximumFractionDigits": 0,
+                  "minimumFractionDigits": 0,
+                  "style": "decimal",
+                  "useGrouping": "always"
+                }
               },
               {
-                "jimuName": "Pad_8",
-                "name": "Pad_8",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "Pad 8"
+                "jimuName": "total_wells_2mi",
+                "name": "total_wells_2mi",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeBigInteger",
+                "alias": "total_wells_2mi",
+                "fieldFormat": {
+                  "type": "number",
+                  "maximumFractionDigits": 0,
+                  "minimumFractionDigits": 0,
+                  "style": "decimal",
+                  "useGrouping": "always"
+                }
               },
               {
-                "jimuName": "Pad_9",
-                "name": "Pad_9",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "Pad 9"
+                "jimuName": "total_wells_1mi",
+                "name": "total_wells_1mi",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeBigInteger",
+                "alias": "total_wells_1mi",
+                "fieldFormat": {
+                  "type": "number",
+                  "maximumFractionDigits": 0,
+                  "minimumFractionDigits": 0,
+                  "style": "decimal",
+                  "useGrouping": "always"
+                }
               },
               {
-                "jimuName": "Pad_10",
-                "name": "Pad_10",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "Pad 10"
+                "jimuName": "total_wells_halfmi",
+                "name": "total_wells_halfmi",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeBigInteger",
+                "alias": "total_wells_halfmi",
+                "fieldFormat": {
+                  "type": "number",
+                  "maximumFractionDigits": 0,
+                  "minimumFractionDigits": 0,
+                  "style": "decimal",
+                  "useGrouping": "always"
+                }
               },
               {
-                "jimuName": "Pad_11",
-                "name": "Pad_11",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "Pad 11"
+                "jimuName": "arlington_wellpads_2mi",
+                "name": "arlington_wellpads_2mi",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeBigInteger",
+                "alias": "arlington_wellpads_2mi",
+                "fieldFormat": {
+                  "type": "number",
+                  "maximumFractionDigits": 0,
+                  "minimumFractionDigits": 0,
+                  "style": "decimal",
+                  "useGrouping": "always"
+                }
               },
               {
-                "jimuName": "Pad_12",
-                "name": "Pad_12",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "Pad 12"
+                "jimuName": "new_wellpads_2mi",
+                "name": "new_wellpads_2mi",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeBigInteger",
+                "alias": "new_wellpads_2mi",
+                "fieldFormat": {
+                  "type": "number",
+                  "maximumFractionDigits": 0,
+                  "minimumFractionDigits": 0,
+                  "style": "decimal",
+                  "useGrouping": "always"
+                }
               },
               {
-                "jimuName": "Pad_13",
-                "name": "Pad_13",
+                "jimuName": "total_wellpads_2mi",
+                "name": "total_wellpads_2mi",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeBigInteger",
+                "alias": "total_wellpads_2mi",
+                "fieldFormat": {
+                  "type": "number",
+                  "maximumFractionDigits": 0,
+                  "minimumFractionDigits": 0,
+                  "style": "decimal",
+                  "useGrouping": "always"
+                }
+              },
+              {
+                "jimuName": "arlington_pad_1",
+                "name": "arlington_pad_1",
                 "type": "STRING",
                 "esriType": "esriFieldTypeString",
-                "alias": "Pad 13"
+                "alias": "arlington_pad_1"
+              },
+              {
+                "jimuName": "arlington_pad_2",
+                "name": "arlington_pad_2",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "arlington_pad_2"
+              },
+              {
+                "jimuName": "arlington_pad_3",
+                "name": "arlington_pad_3",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "arlington_pad_3"
+              },
+              {
+                "jimuName": "arlington_pad_4",
+                "name": "arlington_pad_4",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "arlington_pad_4"
+              },
+              {
+                "jimuName": "arlington_pad_5",
+                "name": "arlington_pad_5",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "arlington_pad_5"
+              },
+              {
+                "jimuName": "arlington_pad_6",
+                "name": "arlington_pad_6",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "arlington_pad_6"
+              },
+              {
+                "jimuName": "arlington_pad_7",
+                "name": "arlington_pad_7",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "arlington_pad_7"
+              },
+              {
+                "jimuName": "arlington_pad_8",
+                "name": "arlington_pad_8",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "arlington_pad_8"
+              },
+              {
+                "jimuName": "arlington_pad_9",
+                "name": "arlington_pad_9",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "arlington_pad_9"
+              },
+              {
+                "jimuName": "arlington_pad_10",
+                "name": "arlington_pad_10",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "arlington_pad_10"
+              },
+              {
+                "jimuName": "other_pad_1",
+                "name": "other_pad_1",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "other_pad_1"
+              },
+              {
+                "jimuName": "other_pad_2",
+                "name": "other_pad_2",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "other_pad_2"
+              },
+              {
+                "jimuName": "other_pad_3",
+                "name": "other_pad_3",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "other_pad_3"
+              },
+              {
+                "jimuName": "other_pad_4",
+                "name": "other_pad_4",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "other_pad_4"
+              },
+              {
+                "jimuName": "other_pad_5",
+                "name": "other_pad_5",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "other_pad_5"
+              },
+              {
+                "jimuName": "other_pad_6",
+                "name": "other_pad_6",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "other_pad_6"
+              },
+              {
+                "jimuName": "other_pad_7",
+                "name": "other_pad_7",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "other_pad_7"
+              },
+              {
+                "jimuName": "other_pad_8",
+                "name": "other_pad_8",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "other_pad_8"
+              },
+              {
+                "jimuName": "other_pad_9",
+                "name": "other_pad_9",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "other_pad_9"
+              },
+              {
+                "jimuName": "other_pad_10",
+                "name": "other_pad_10",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "other_pad_10"
               }
             ],
             "tableFields": [
               {
-                "jimuName": "OBJECTID",
-                "name": "OBJECTID",
-                "type": "NUMBER",
-                "esriType": "esriFieldTypeOID",
-                "alias": "ObjectId",
-                "fieldFormat": {
-                  "type": "number",
-                  "useGrouping": "never"
-                },
-                "format": {
-                  "digitSeparator": false,
-                  "places": 0
-                },
-                "editAuthority": false,
-                "editable": false,
-                "visible": true
-              },
-              {
-                "jimuName": "Name",
-                "name": "Name",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "Name",
-                "editAuthority": true,
-                "editable": true,
-                "visible": true
-              },
-              {
-                "jimuName": "Address",
-                "name": "Address",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "Address",
-                "editAuthority": true,
-                "editable": true,
-                "visible": true
-              },
-              {
-                "jimuName": "Town",
-                "name": "Town",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "Town",
-                "editAuthority": true,
-                "editable": true,
-                "visible": true
-              },
-              {
-                "jimuName": "State",
-                "name": "State",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "State",
-                "editAuthority": true,
-                "editable": true,
-                "visible": true
-              },
-              {
-                "jimuName": "NEAR_FID",
-                "name": "NEAR_FID",
+                "jimuName": "latitude",
+                "name": "latitude",
                 "type": "NUMBER",
                 "esriType": "esriFieldTypeDouble",
-                "alias": "NEAR_FID",
-                "fieldFormat": {
-                  "type": "number",
-                  "maximumFractionDigits": 6,
-                  "minimumFractionDigits": 6,
-                  "style": "decimal",
-                  "useGrouping": "never"
-                },
-                "editAuthority": true,
-                "editable": true,
-                "visible": true
-              },
-              {
-                "jimuName": "NEAR_FID_Wells_TXSP",
-                "name": "NEAR_FID_Wells_TXSP",
-                "type": "NUMBER",
-                "esriType": "esriFieldTypeInteger",
-                "alias": "NEAR_FID_Wells_TXSP",
+                "alias": "latitude",
                 "fieldFormat": {
                   "type": "number",
                   "maximumFractionDigits": 2,
-                  "minimumFractionDigits": 0,
+                  "minimumFractionDigits": 2,
                   "style": "decimal",
-                  "useGrouping": "never"
+                  "useGrouping": "always"
                 },
                 "editAuthority": true,
                 "editable": true,
                 "visible": true
               },
               {
-                "jimuName": "WellCt_2mi",
-                "name": "WellCt_2mi",
+                "jimuName": "longitude",
+                "name": "longitude",
                 "type": "NUMBER",
-                "esriType": "esriFieldTypeSmallInteger",
-                "alias": "WellCt_2mi",
+                "esriType": "esriFieldTypeDouble",
+                "alias": "longitude",
                 "fieldFormat": {
                   "type": "number",
                   "maximumFractionDigits": 2,
-                  "minimumFractionDigits": 0,
+                  "minimumFractionDigits": 2,
                   "style": "decimal",
-                  "useGrouping": "never"
+                  "useGrouping": "always"
                 },
                 "editAuthority": true,
                 "editable": true,
                 "visible": true
               },
               {
-                "jimuName": "WellCt_1mi",
-                "name": "WellCt_1mi",
+                "jimuName": "name",
+                "name": "name",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "name",
+                "editAuthority": true,
+                "editable": true,
+                "visible": true
+              },
+              {
+                "jimuName": "address",
+                "name": "address",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "address",
+                "editAuthority": true,
+                "editable": true,
+                "visible": true
+              },
+              {
+                "jimuName": "town",
+                "name": "town",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "town",
+                "editAuthority": true,
+                "editable": true,
+                "visible": true
+              },
+              {
+                "jimuName": "state",
+                "name": "state",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "state",
+                "editAuthority": true,
+                "editable": true,
+                "visible": true
+              },
+              {
+                "jimuName": "drilled_wells_2mi",
+                "name": "drilled_wells_2mi",
                 "type": "NUMBER",
-                "esriType": "esriFieldTypeSmallInteger",
-                "alias": "WellCt_1mi",
+                "esriType": "esriFieldTypeBigInteger",
+                "alias": "drilled_wells_2mi",
                 "fieldFormat": {
                   "type": "number",
-                  "maximumFractionDigits": 2,
+                  "maximumFractionDigits": 0,
                   "minimumFractionDigits": 0,
                   "style": "decimal",
-                  "useGrouping": "never"
+                  "useGrouping": "always"
                 },
                 "editAuthority": true,
                 "editable": true,
-                "visible": true
+                "visible": false
               },
               {
-                "jimuName": "WellCt_halfmi",
-                "name": "WellCt_halfmi",
+                "jimuName": "drilled_wells_1mi",
+                "name": "drilled_wells_1mi",
                 "type": "NUMBER",
-                "esriType": "esriFieldTypeSmallInteger",
-                "alias": "WellCt_halfmi",
+                "esriType": "esriFieldTypeBigInteger",
+                "alias": "drilled_wells_1mi",
                 "fieldFormat": {
                   "type": "number",
-                  "maximumFractionDigits": 2,
+                  "maximumFractionDigits": 0,
                   "minimumFractionDigits": 0,
                   "style": "decimal",
-                  "useGrouping": "never"
+                  "useGrouping": "always"
                 },
                 "editAuthority": true,
                 "editable": true,
-                "visible": true
+                "visible": false
               },
               {
-                "jimuName": "Pad_1",
-                "name": "Pad_1",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "Pad 1",
+                "jimuName": "drilled_wells_halfmi",
+                "name": "drilled_wells_halfmi",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeBigInteger",
+                "alias": "drilled_wells_halfmi",
+                "fieldFormat": {
+                  "type": "number",
+                  "maximumFractionDigits": 0,
+                  "minimumFractionDigits": 0,
+                  "style": "decimal",
+                  "useGrouping": "always"
+                },
                 "editAuthority": true,
                 "editable": true,
-                "visible": true
+                "visible": false
               },
               {
-                "jimuName": "Pad_2",
-                "name": "Pad_2",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "Pad 2",
+                "jimuName": "plugged_wells_2mi",
+                "name": "plugged_wells_2mi",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeBigInteger",
+                "alias": "plugged_wells_2mi",
+                "fieldFormat": {
+                  "type": "number",
+                  "maximumFractionDigits": 0,
+                  "minimumFractionDigits": 0,
+                  "style": "decimal",
+                  "useGrouping": "always"
+                },
                 "editAuthority": true,
                 "editable": true,
-                "visible": true
+                "visible": false
               },
               {
-                "jimuName": "Pad_3",
-                "name": "Pad_3",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "Pad 3",
+                "jimuName": "plugged_wells_1mi",
+                "name": "plugged_wells_1mi",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeBigInteger",
+                "alias": "plugged_wells_1mi",
+                "fieldFormat": {
+                  "type": "number",
+                  "maximumFractionDigits": 0,
+                  "minimumFractionDigits": 0,
+                  "style": "decimal",
+                  "useGrouping": "always"
+                },
                 "editAuthority": true,
                 "editable": true,
-                "visible": true
+                "visible": false
               },
               {
-                "jimuName": "Pad_4",
-                "name": "Pad_4",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "Pad 4",
+                "jimuName": "plugged_wells_halfmi",
+                "name": "plugged_wells_halfmi",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeBigInteger",
+                "alias": "plugged_wells_halfmi",
+                "fieldFormat": {
+                  "type": "number",
+                  "maximumFractionDigits": 0,
+                  "minimumFractionDigits": 0,
+                  "style": "decimal",
+                  "useGrouping": "always"
+                },
                 "editAuthority": true,
                 "editable": true,
-                "visible": true
+                "visible": false
               },
               {
-                "jimuName": "Pad_5",
-                "name": "Pad_5",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "Pad 5",
+                "jimuName": "notdrilled_wells_2mi",
+                "name": "notdrilled_wells_2mi",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeBigInteger",
+                "alias": "notdrilled_wells_2mi",
+                "fieldFormat": {
+                  "type": "number",
+                  "maximumFractionDigits": 0,
+                  "minimumFractionDigits": 0,
+                  "style": "decimal",
+                  "useGrouping": "always"
+                },
                 "editAuthority": true,
                 "editable": true,
-                "visible": true
+                "visible": false
               },
               {
-                "jimuName": "Pad_6",
-                "name": "Pad_6",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "Pad 6",
+                "jimuName": "notdrilled_wells_1mi",
+                "name": "notdrilled_wells_1mi",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeBigInteger",
+                "alias": "notdrilled_wells_1mi",
+                "fieldFormat": {
+                  "type": "number",
+                  "maximumFractionDigits": 0,
+                  "minimumFractionDigits": 0,
+                  "style": "decimal",
+                  "useGrouping": "always"
+                },
                 "editAuthority": true,
                 "editable": true,
-                "visible": true
+                "visible": false
               },
               {
-                "jimuName": "Pad_7",
-                "name": "Pad_7",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "Pad 7",
+                "jimuName": "notdrilled_wells_halfmi",
+                "name": "notdrilled_wells_halfmi",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeBigInteger",
+                "alias": "notdrilled_wells_halfmi",
+                "fieldFormat": {
+                  "type": "number",
+                  "maximumFractionDigits": 0,
+                  "minimumFractionDigits": 0,
+                  "style": "decimal",
+                  "useGrouping": "always"
+                },
                 "editAuthority": true,
                 "editable": true,
-                "visible": true
+                "visible": false
               },
               {
-                "jimuName": "Pad_8",
-                "name": "Pad_8",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "Pad 8",
+                "jimuName": "total_wells_2mi",
+                "name": "total_wells_2mi",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeBigInteger",
+                "alias": "total_wells_2mi",
+                "fieldFormat": {
+                  "type": "number",
+                  "maximumFractionDigits": 0,
+                  "minimumFractionDigits": 0,
+                  "style": "decimal",
+                  "useGrouping": "always"
+                },
                 "editAuthority": true,
                 "editable": true,
-                "visible": true
+                "visible": false
               },
               {
-                "jimuName": "Pad_9",
-                "name": "Pad_9",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "Pad 9",
+                "jimuName": "total_wells_1mi",
+                "name": "total_wells_1mi",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeBigInteger",
+                "alias": "total_wells_1mi",
+                "fieldFormat": {
+                  "type": "number",
+                  "maximumFractionDigits": 0,
+                  "minimumFractionDigits": 0,
+                  "style": "decimal",
+                  "useGrouping": "always"
+                },
                 "editAuthority": true,
                 "editable": true,
-                "visible": true
+                "visible": false
               },
               {
-                "jimuName": "Pad_10",
-                "name": "Pad_10",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "Pad 10",
+                "jimuName": "total_wells_halfmi",
+                "name": "total_wells_halfmi",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeBigInteger",
+                "alias": "total_wells_halfmi",
+                "fieldFormat": {
+                  "type": "number",
+                  "maximumFractionDigits": 0,
+                  "minimumFractionDigits": 0,
+                  "style": "decimal",
+                  "useGrouping": "always"
+                },
                 "editAuthority": true,
                 "editable": true,
-                "visible": true
+                "visible": false
               },
               {
-                "jimuName": "Pad_11",
-                "name": "Pad_11",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "Pad 11",
+                "jimuName": "arlington_wellpads_2mi",
+                "name": "arlington_wellpads_2mi",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeBigInteger",
+                "alias": "arlington_wellpads_2mi",
+                "fieldFormat": {
+                  "type": "number",
+                  "maximumFractionDigits": 0,
+                  "minimumFractionDigits": 0,
+                  "style": "decimal",
+                  "useGrouping": "always"
+                },
                 "editAuthority": true,
                 "editable": true,
-                "visible": true
+                "visible": false
               },
               {
-                "jimuName": "Pad_12",
-                "name": "Pad_12",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "Pad 12",
+                "jimuName": "new_wellpads_2mi",
+                "name": "new_wellpads_2mi",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeBigInteger",
+                "alias": "new_wellpads_2mi",
+                "fieldFormat": {
+                  "type": "number",
+                  "maximumFractionDigits": 0,
+                  "minimumFractionDigits": 0,
+                  "style": "decimal",
+                  "useGrouping": "always"
+                },
                 "editAuthority": true,
                 "editable": true,
-                "visible": true
+                "visible": false
               },
               {
-                "jimuName": "Pad_13",
-                "name": "Pad_13",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "Pad 13",
+                "jimuName": "total_wellpads_2mi",
+                "name": "total_wellpads_2mi",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeBigInteger",
+                "alias": "total_wellpads_2mi",
+                "fieldFormat": {
+                  "type": "number",
+                  "maximumFractionDigits": 0,
+                  "minimumFractionDigits": 0,
+                  "style": "decimal",
+                  "useGrouping": "always"
+                },
                 "editAuthority": true,
                 "editable": true,
-                "visible": true
+                "visible": false
+              },
+              {
+                "jimuName": "arlington_pad_1",
+                "name": "arlington_pad_1",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "arlington_pad_1",
+                "editAuthority": true,
+                "editable": true,
+                "visible": false
+              },
+              {
+                "jimuName": "arlington_pad_2",
+                "name": "arlington_pad_2",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "arlington_pad_2",
+                "editAuthority": true,
+                "editable": true,
+                "visible": false
+              },
+              {
+                "jimuName": "arlington_pad_3",
+                "name": "arlington_pad_3",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "arlington_pad_3",
+                "editAuthority": true,
+                "editable": true,
+                "visible": false
+              },
+              {
+                "jimuName": "arlington_pad_4",
+                "name": "arlington_pad_4",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "arlington_pad_4",
+                "editAuthority": true,
+                "editable": true,
+                "visible": false
+              },
+              {
+                "jimuName": "arlington_pad_5",
+                "name": "arlington_pad_5",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "arlington_pad_5",
+                "editAuthority": true,
+                "editable": true,
+                "visible": false
+              },
+              {
+                "jimuName": "arlington_pad_6",
+                "name": "arlington_pad_6",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "arlington_pad_6",
+                "editAuthority": true,
+                "editable": true,
+                "visible": false
+              },
+              {
+                "jimuName": "arlington_pad_7",
+                "name": "arlington_pad_7",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "arlington_pad_7",
+                "editAuthority": true,
+                "editable": true,
+                "visible": false
+              },
+              {
+                "jimuName": "arlington_pad_8",
+                "name": "arlington_pad_8",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "arlington_pad_8",
+                "editAuthority": true,
+                "editable": true,
+                "visible": false
+              },
+              {
+                "jimuName": "arlington_pad_9",
+                "name": "arlington_pad_9",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "arlington_pad_9",
+                "editAuthority": true,
+                "editable": true,
+                "visible": false
+              },
+              {
+                "jimuName": "arlington_pad_10",
+                "name": "arlington_pad_10",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "arlington_pad_10",
+                "editAuthority": true,
+                "editable": true,
+                "visible": false
+              },
+              {
+                "jimuName": "other_pad_1",
+                "name": "other_pad_1",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "other_pad_1",
+                "editAuthority": true,
+                "editable": true,
+                "visible": false
+              },
+              {
+                "jimuName": "other_pad_2",
+                "name": "other_pad_2",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "other_pad_2",
+                "editAuthority": true,
+                "editable": true,
+                "visible": false
+              },
+              {
+                "jimuName": "other_pad_3",
+                "name": "other_pad_3",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "other_pad_3",
+                "editAuthority": true,
+                "editable": true,
+                "visible": false
+              },
+              {
+                "jimuName": "other_pad_4",
+                "name": "other_pad_4",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "other_pad_4",
+                "editAuthority": true,
+                "editable": true,
+                "visible": false
+              },
+              {
+                "jimuName": "other_pad_5",
+                "name": "other_pad_5",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "other_pad_5",
+                "editAuthority": true,
+                "editable": true,
+                "visible": false
+              },
+              {
+                "jimuName": "other_pad_6",
+                "name": "other_pad_6",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "other_pad_6",
+                "editAuthority": true,
+                "editable": true,
+                "visible": false
+              },
+              {
+                "jimuName": "other_pad_7",
+                "name": "other_pad_7",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "other_pad_7",
+                "editAuthority": true,
+                "editable": true,
+                "visible": false
+              },
+              {
+                "jimuName": "other_pad_8",
+                "name": "other_pad_8",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "other_pad_8",
+                "editAuthority": true,
+                "editable": true,
+                "visible": false
+              },
+              {
+                "jimuName": "other_pad_9",
+                "name": "other_pad_9",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "other_pad_9",
+                "editAuthority": true,
+                "editable": true,
+                "visible": false
+              },
+              {
+                "jimuName": "other_pad_10",
+                "name": "other_pad_10",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "other_pad_10",
+                "editAuthority": true,
+                "editable": true,
+                "visible": false
               }
             ],
             "overrideGeneralSettings": false,
@@ -2106,637 +2593,11 @@
               "wrapText": false,
               "textAlign": "start"
             },
-            "layerHonorMode": "WEBMAP"
-          },
-          {
-            "id": "dataSource_1-4dd20c61c23a4439a67be06486c9b4cc-1",
-            "name": "Public parks",
-            "useDataSource": {
-              "dataSourceId": "dataSource_1-4dd20c61c23a4439a67be06486c9b4cc",
-              "mainDataSourceId": "dataSource_1-4dd20c61c23a4439a67be06486c9b4cc",
-              "rootDataSourceId": "dataSource_1",
-              "fields": [
-                "FID",
-                "OBJECTID",
-                "TotalAcres",
-                "Maintenanc",
-                "CityCounci",
-                "Cartegraph",
-                "Shape__Area",
-                "Shape__Length"
-              ]
-            },
-            "allFields": [
-              {
-                "jimuName": "FID",
-                "name": "FID",
-                "type": "NUMBER",
-                "esriType": "esriFieldTypeOID",
-                "alias": "FID",
-                "fieldFormat": {
-                  "type": "number",
-                  "useGrouping": "never"
-                },
-                "format": {
-                  "digitSeparator": false,
-                  "places": 0
-                }
-              },
-              {
-                "jimuName": "OBJECTID",
-                "name": "OBJECTID",
-                "type": "NUMBER",
-                "esriType": "esriFieldTypeSmallInteger",
-                "alias": "OBJECTID",
-                "fieldFormat": {
-                  "type": "number",
-                  "maximumFractionDigits": 2,
-                  "minimumFractionDigits": 0,
-                  "style": "decimal",
-                  "useGrouping": "never"
-                }
-              },
-              {
-                "jimuName": "TotalAcres",
-                "name": "TotalAcres",
-                "type": "NUMBER",
-                "esriType": "esriFieldTypeDouble",
-                "alias": "TotalAcres",
-                "fieldFormat": {
-                  "type": "number",
-                  "maximumFractionDigits": 6,
-                  "minimumFractionDigits": 6,
-                  "style": "decimal",
-                  "useGrouping": "never"
-                }
-              },
-              {
-                "jimuName": "Maintenanc",
-                "name": "Maintenanc",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "Maintenanc"
-              },
-              {
-                "jimuName": "CityCounci",
-                "name": "CityCounci",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "CityCounci"
-              },
-              {
-                "jimuName": "Cartegraph",
-                "name": "Cartegraph",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "Cartegraph"
-              },
-              {
-                "jimuName": "Shape__Area",
-                "name": "Shape__Area",
-                "type": "NUMBER",
-                "esriType": "esriFieldTypeDouble",
-                "alias": "Shape__Area",
-                "fieldFormat": {
-                  "type": "number",
-                  "maximumFractionDigits": 6,
-                  "minimumFractionDigits": 6,
-                  "style": "decimal",
-                  "useGrouping": "never"
-                }
-              },
-              {
-                "jimuName": "Shape__Length",
-                "name": "Shape__Length",
-                "type": "NUMBER",
-                "esriType": "esriFieldTypeDouble",
-                "alias": "Shape__Length",
-                "fieldFormat": {
-                  "type": "number",
-                  "maximumFractionDigits": 6,
-                  "minimumFractionDigits": 6,
-                  "style": "decimal",
-                  "useGrouping": "never"
-                }
-              }
-            ],
-            "tableFields": [
-              {
-                "jimuName": "FID",
-                "name": "FID",
-                "type": "NUMBER",
-                "esriType": "esriFieldTypeOID",
-                "alias": "FID",
-                "fieldFormat": {
-                  "type": "number",
-                  "useGrouping": "never"
-                },
-                "format": {
-                  "digitSeparator": false,
-                  "places": 0
-                },
-                "editAuthority": false,
-                "editable": false,
-                "visible": true
-              },
-              {
-                "jimuName": "OBJECTID",
-                "name": "OBJECTID",
-                "type": "NUMBER",
-                "esriType": "esriFieldTypeSmallInteger",
-                "alias": "OBJECTID",
-                "fieldFormat": {
-                  "type": "number",
-                  "maximumFractionDigits": 2,
-                  "minimumFractionDigits": 0,
-                  "style": "decimal",
-                  "useGrouping": "never"
-                },
-                "editAuthority": true,
-                "editable": true,
-                "visible": true
-              },
-              {
-                "jimuName": "TotalAcres",
-                "name": "TotalAcres",
-                "type": "NUMBER",
-                "esriType": "esriFieldTypeDouble",
-                "alias": "TotalAcres",
-                "fieldFormat": {
-                  "type": "number",
-                  "maximumFractionDigits": 6,
-                  "minimumFractionDigits": 6,
-                  "style": "decimal",
-                  "useGrouping": "never"
-                },
-                "editAuthority": true,
-                "editable": true,
-                "visible": true
-              },
-              {
-                "jimuName": "Maintenanc",
-                "name": "Maintenanc",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "Maintenanc",
-                "editAuthority": true,
-                "editable": true,
-                "visible": true
-              },
-              {
-                "jimuName": "CityCounci",
-                "name": "CityCounci",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "CityCounci",
-                "editAuthority": true,
-                "editable": true,
-                "visible": true
-              },
-              {
-                "jimuName": "Cartegraph",
-                "name": "Cartegraph",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "Cartegraph",
-                "editAuthority": true,
-                "editable": true,
-                "visible": true
-              },
-              {
-                "jimuName": "Shape__Area",
-                "name": "Shape__Area",
-                "type": "NUMBER",
-                "esriType": "esriFieldTypeDouble",
-                "alias": "Shape__Area",
-                "fieldFormat": {
-                  "type": "number",
-                  "maximumFractionDigits": 6,
-                  "minimumFractionDigits": 6,
-                  "style": "decimal",
-                  "useGrouping": "never"
-                },
-                "editAuthority": false,
-                "editable": false,
-                "visible": true
-              },
-              {
-                "jimuName": "Shape__Length",
-                "name": "Shape__Length",
-                "type": "NUMBER",
-                "esriType": "esriFieldTypeDouble",
-                "alias": "Shape__Length",
-                "fieldFormat": {
-                  "type": "number",
-                  "maximumFractionDigits": 6,
-                  "minimumFractionDigits": 6,
-                  "style": "decimal",
-                  "useGrouping": "never"
-                },
-                "editAuthority": false,
-                "editable": false,
-                "visible": true
-              }
-            ],
-            "overrideGeneralSettings": false,
-            "enableAttachments": false,
-            "enableEdit": false,
-            "allowCsv": false,
-            "enableSearch": false,
-            "searchFields": [],
-            "enableRefresh": true,
-            "enableShowHideColumn": true,
-            "enableSelect": true,
-            "enableDelete": false,
-            "selectMode": "SINGLE",
-            "showCount": true,
-            "headerFontSetting": {
-              "backgroundColor": "",
-              "fontSize": 14,
-              "bold": false,
-              "color": ""
-            },
-            "columnSetting": {
-              "responsiveType": "FIXED",
-              "columnWidth": 200,
-              "wrapText": false,
-              "textAlign": "start"
-            },
-            "layerHonorMode": "WEBMAP"
-          },
-          {
-            "id": "dataSource_1-aa18ae600ec04187bcb12123d72d1f29-4034e6d9dff24658a2d4ebf782d69cac-1",
-            "name": "Well hole",
-            "useDataSource": {
-              "dataSourceId": "dataSource_1-aa18ae600ec04187bcb12123d72d1f29-4034e6d9dff24658a2d4ebf782d69cac",
-              "mainDataSourceId": "dataSource_1-aa18ae600ec04187bcb12123d72d1f29-4034e6d9dff24658a2d4ebf782d69cac",
-              "rootDataSourceId": "dataSource_1",
-              "fields": [
-                "FID",
-                "SURFACE_ID",
-                "SYMNUM",
-                "API",
-                "RELIAB",
-                "LONG27",
-                "LAT27",
-                "LONG83",
-                "LAT83",
-                "WELLID",
-                "NearArl2mi",
-                "Status"
-              ]
-            },
-            "allFields": [
-              {
-                "jimuName": "FID",
-                "name": "FID",
-                "type": "NUMBER",
-                "esriType": "esriFieldTypeOID",
-                "alias": "FID",
-                "fieldFormat": {
-                  "type": "number",
-                  "useGrouping": "never"
-                },
-                "format": {
-                  "digitSeparator": false,
-                  "places": 0
-                }
-              },
-              {
-                "jimuName": "SURFACE_ID",
-                "name": "SURFACE_ID",
-                "type": "NUMBER",
-                "esriType": "esriFieldTypeInteger",
-                "alias": "SURFACE_ID",
-                "fieldFormat": {
-                  "type": "number",
-                  "maximumFractionDigits": 2,
-                  "minimumFractionDigits": 0,
-                  "style": "decimal",
-                  "useGrouping": "never"
-                }
-              },
-              {
-                "jimuName": "SYMNUM",
-                "name": "SYMNUM",
-                "type": "NUMBER",
-                "esriType": "esriFieldTypeInteger",
-                "alias": "SYMNUM",
-                "fieldFormat": {
-                  "type": "number",
-                  "maximumFractionDigits": 2,
-                  "minimumFractionDigits": 0,
-                  "style": "decimal",
-                  "useGrouping": "never"
-                }
-              },
-              {
-                "jimuName": "API",
-                "name": "API",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "API"
-              },
-              {
-                "jimuName": "RELIAB",
-                "name": "RELIAB",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "RELIAB"
-              },
-              {
-                "jimuName": "LONG27",
-                "name": "LONG27",
-                "type": "NUMBER",
-                "esriType": "esriFieldTypeDouble",
-                "alias": "LONG27",
-                "fieldFormat": {
-                  "type": "number",
-                  "maximumFractionDigits": 6,
-                  "minimumFractionDigits": 6,
-                  "style": "decimal",
-                  "useGrouping": "never"
-                }
-              },
-              {
-                "jimuName": "LAT27",
-                "name": "LAT27",
-                "type": "NUMBER",
-                "esriType": "esriFieldTypeDouble",
-                "alias": "LAT27",
-                "fieldFormat": {
-                  "type": "number",
-                  "maximumFractionDigits": 6,
-                  "minimumFractionDigits": 6,
-                  "style": "decimal",
-                  "useGrouping": "never"
-                }
-              },
-              {
-                "jimuName": "LONG83",
-                "name": "LONG83",
-                "type": "NUMBER",
-                "esriType": "esriFieldTypeDouble",
-                "alias": "LONG83",
-                "fieldFormat": {
-                  "type": "number",
-                  "maximumFractionDigits": 6,
-                  "minimumFractionDigits": 6,
-                  "style": "decimal",
-                  "useGrouping": "never"
-                }
-              },
-              {
-                "jimuName": "LAT83",
-                "name": "LAT83",
-                "type": "NUMBER",
-                "esriType": "esriFieldTypeDouble",
-                "alias": "LAT83",
-                "fieldFormat": {
-                  "type": "number",
-                  "maximumFractionDigits": 6,
-                  "minimumFractionDigits": 6,
-                  "style": "decimal",
-                  "useGrouping": "never"
-                }
-              },
-              {
-                "jimuName": "WELLID",
-                "name": "WELLID",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "WELLID"
-              },
-              {
-                "jimuName": "NearArl2mi",
-                "name": "NearArl2mi",
-                "type": "NUMBER",
-                "esriType": "esriFieldTypeInteger",
-                "alias": "NearArl2mi",
-                "fieldFormat": {
-                  "type": "number",
-                  "maximumFractionDigits": 2,
-                  "minimumFractionDigits": 0,
-                  "style": "decimal",
-                  "useGrouping": "never"
-                }
-              },
-              {
-                "jimuName": "Status",
-                "name": "Status",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "Status"
-              }
-            ],
-            "tableFields": [
-              {
-                "jimuName": "FID",
-                "name": "FID",
-                "type": "NUMBER",
-                "esriType": "esriFieldTypeOID",
-                "alias": "FID",
-                "fieldFormat": {
-                  "type": "number",
-                  "useGrouping": "never"
-                },
-                "format": {
-                  "digitSeparator": false,
-                  "places": 0
-                },
-                "editAuthority": false,
-                "editable": false,
-                "visible": true
-              },
-              {
-                "jimuName": "SURFACE_ID",
-                "name": "SURFACE_ID",
-                "type": "NUMBER",
-                "esriType": "esriFieldTypeInteger",
-                "alias": "SURFACE_ID",
-                "fieldFormat": {
-                  "type": "number",
-                  "maximumFractionDigits": 2,
-                  "minimumFractionDigits": 0,
-                  "style": "decimal",
-                  "useGrouping": "never"
-                },
-                "editAuthority": true,
-                "editable": true,
-                "visible": true
-              },
-              {
-                "jimuName": "SYMNUM",
-                "name": "SYMNUM",
-                "type": "NUMBER",
-                "esriType": "esriFieldTypeInteger",
-                "alias": "SYMNUM",
-                "fieldFormat": {
-                  "type": "number",
-                  "maximumFractionDigits": 2,
-                  "minimumFractionDigits": 0,
-                  "style": "decimal",
-                  "useGrouping": "never"
-                },
-                "editAuthority": true,
-                "editable": true,
-                "visible": true
-              },
-              {
-                "jimuName": "API",
-                "name": "API",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "API",
-                "editAuthority": true,
-                "editable": true,
-                "visible": true
-              },
-              {
-                "jimuName": "RELIAB",
-                "name": "RELIAB",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "RELIAB",
-                "editAuthority": true,
-                "editable": true,
-                "visible": true
-              },
-              {
-                "jimuName": "LONG27",
-                "name": "LONG27",
-                "type": "NUMBER",
-                "esriType": "esriFieldTypeDouble",
-                "alias": "LONG27",
-                "fieldFormat": {
-                  "type": "number",
-                  "maximumFractionDigits": 6,
-                  "minimumFractionDigits": 6,
-                  "style": "decimal",
-                  "useGrouping": "never"
-                },
-                "editAuthority": true,
-                "editable": true,
-                "visible": true
-              },
-              {
-                "jimuName": "LAT27",
-                "name": "LAT27",
-                "type": "NUMBER",
-                "esriType": "esriFieldTypeDouble",
-                "alias": "LAT27",
-                "fieldFormat": {
-                  "type": "number",
-                  "maximumFractionDigits": 6,
-                  "minimumFractionDigits": 6,
-                  "style": "decimal",
-                  "useGrouping": "never"
-                },
-                "editAuthority": true,
-                "editable": true,
-                "visible": true
-              },
-              {
-                "jimuName": "LONG83",
-                "name": "LONG83",
-                "type": "NUMBER",
-                "esriType": "esriFieldTypeDouble",
-                "alias": "LONG83",
-                "fieldFormat": {
-                  "type": "number",
-                  "maximumFractionDigits": 6,
-                  "minimumFractionDigits": 6,
-                  "style": "decimal",
-                  "useGrouping": "never"
-                },
-                "editAuthority": true,
-                "editable": true,
-                "visible": true
-              },
-              {
-                "jimuName": "LAT83",
-                "name": "LAT83",
-                "type": "NUMBER",
-                "esriType": "esriFieldTypeDouble",
-                "alias": "LAT83",
-                "fieldFormat": {
-                  "type": "number",
-                  "maximumFractionDigits": 6,
-                  "minimumFractionDigits": 6,
-                  "style": "decimal",
-                  "useGrouping": "never"
-                },
-                "editAuthority": true,
-                "editable": true,
-                "visible": true
-              },
-              {
-                "jimuName": "WELLID",
-                "name": "WELLID",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "WELLID",
-                "editAuthority": true,
-                "editable": true,
-                "visible": true
-              },
-              {
-                "jimuName": "NearArl2mi",
-                "name": "NearArl2mi",
-                "type": "NUMBER",
-                "esriType": "esriFieldTypeInteger",
-                "alias": "NearArl2mi",
-                "fieldFormat": {
-                  "type": "number",
-                  "maximumFractionDigits": 2,
-                  "minimumFractionDigits": 0,
-                  "style": "decimal",
-                  "useGrouping": "never"
-                },
-                "editAuthority": true,
-                "editable": true,
-                "visible": true
-              },
-              {
-                "jimuName": "Status",
-                "name": "Status",
-                "type": "STRING",
-                "esriType": "esriFieldTypeString",
-                "alias": "Status",
-                "editAuthority": true,
-                "editable": true,
-                "visible": true
-              }
-            ],
-            "overrideGeneralSettings": false,
-            "enableAttachments": false,
-            "enableEdit": false,
-            "allowCsv": false,
-            "enableSearch": false,
-            "searchFields": [],
-            "enableRefresh": true,
-            "enableShowHideColumn": true,
-            "enableSelect": true,
-            "enableDelete": false,
-            "selectMode": "SINGLE",
-            "showCount": true,
-            "headerFontSetting": {
-              "backgroundColor": "",
-              "fontSize": 14,
-              "bold": false,
-              "color": ""
-            },
-            "columnSetting": {
-              "responsiveType": "FIXED",
-              "columnWidth": 200,
-              "wrapText": false,
-              "textAlign": "start"
-            },
-            "layerHonorMode": "WEBMAP"
+            "layerHonorMode": "CUSTOM"
           },
           {
             "id": "dataSource_1-e59194e9ca374157bc4c38dc6a909cdf-1",
-            "name": "Named gas well pads",
+            "name": "Named Gas Well Pads",
             "useDataSource": {
               "dataSourceId": "dataSource_1-e59194e9ca374157bc4c38dc6a909cdf",
               "mainDataSourceId": "dataSource_1-e59194e9ca374157bc4c38dc6a909cdf",
@@ -2974,6 +2835,1378 @@
               "textAlign": "start"
             },
             "layerHonorMode": "WEBMAP"
+          },
+          {
+            "id": "dataSource_1-aa18ae600ec04187bcb12123d72d1f29-19e231623c9-layer-17-3",
+            "name": "Surface Location",
+            "useDataSource": {
+              "dataSourceId": "dataSource_1-aa18ae600ec04187bcb12123d72d1f29-19e231623c9-layer-17",
+              "mainDataSourceId": "dataSource_1-aa18ae600ec04187bcb12123d72d1f29-19e231623c9-layer-17",
+              "rootDataSourceId": "dataSource_1",
+              "fields": [
+                "id",
+                "wellbore_id",
+                "record_type",
+                "oil_or_gas_code",
+                "oil_district",
+                "oil_lease_number",
+                "oil_well_number",
+                "gas_rrc_id",
+                "gas_district",
+                "gas_well_number",
+                "api_suffix",
+                "active_inactive_code",
+                "dwn_hole_commingle",
+                "rule_37_nbr",
+                "plug_date_pointer",
+                "api_number",
+                "plug_flag",
+                "lease_name",
+                "within_2mi",
+                "within_1mi",
+                "within_0p5mi"
+              ]
+            },
+            "allFields": [
+              {
+                "jimuName": "fid",
+                "name": "fid",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeOID",
+                "alias": "fid",
+                "fieldFormat": {
+                  "type": "number",
+                  "useGrouping": "never"
+                }
+              },
+              {
+                "jimuName": "id",
+                "name": "id",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeBigInteger",
+                "alias": "id",
+                "fieldFormat": {
+                  "type": "number",
+                  "maximumFractionDigits": 0,
+                  "minimumFractionDigits": 0,
+                  "style": "decimal",
+                  "useGrouping": "always"
+                }
+              },
+              {
+                "jimuName": "wellbore_id",
+                "name": "wellbore_id",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeInteger",
+                "alias": "wellbore_id",
+                "fieldFormat": {
+                  "type": "number",
+                  "maximumFractionDigits": 2,
+                  "minimumFractionDigits": 0,
+                  "style": "decimal",
+                  "useGrouping": "always"
+                }
+              },
+              {
+                "jimuName": "record_type",
+                "name": "record_type",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "record_type"
+              },
+              {
+                "jimuName": "oil_or_gas_code",
+                "name": "oil_or_gas_code",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "oil_or_gas_code"
+              },
+              {
+                "jimuName": "oil_district",
+                "name": "oil_district",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "oil_district"
+              },
+              {
+                "jimuName": "oil_lease_number",
+                "name": "oil_lease_number",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "oil_lease_number"
+              },
+              {
+                "jimuName": "oil_well_number",
+                "name": "oil_well_number",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "oil_well_number"
+              },
+              {
+                "jimuName": "gas_rrc_id",
+                "name": "gas_rrc_id",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "gas_rrc_id"
+              },
+              {
+                "jimuName": "gas_district",
+                "name": "gas_district",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "gas_district"
+              },
+              {
+                "jimuName": "gas_well_number",
+                "name": "gas_well_number",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "gas_well_number"
+              },
+              {
+                "jimuName": "api_suffix",
+                "name": "api_suffix",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "api_suffix"
+              },
+              {
+                "jimuName": "active_inactive_code",
+                "name": "active_inactive_code",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "active_inactive_code"
+              },
+              {
+                "jimuName": "dwn_hole_commingle",
+                "name": "dwn_hole_commingle",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "dwn_hole_commingle"
+              },
+              {
+                "jimuName": "rule_37_nbr",
+                "name": "rule_37_nbr",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "rule_37_nbr"
+              },
+              {
+                "jimuName": "plug_date_pointer",
+                "name": "plug_date_pointer",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "plug_date_pointer"
+              },
+              {
+                "jimuName": "api_number",
+                "name": "api_number",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "api_number"
+              },
+              {
+                "jimuName": "plug_flag",
+                "name": "plug_flag",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "plug_flag"
+              },
+              {
+                "jimuName": "lease_name",
+                "name": "lease_name",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "lease_name"
+              },
+              {
+                "jimuName": "within_2mi",
+                "name": "within_2mi",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "within_2mi"
+              },
+              {
+                "jimuName": "within_1mi",
+                "name": "within_1mi",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "within_1mi"
+              },
+              {
+                "jimuName": "within_0p5mi",
+                "name": "within_0p5mi",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "within_0p5mi"
+              }
+            ],
+            "tableFields": [
+              {
+                "jimuName": "id",
+                "name": "id",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeBigInteger",
+                "alias": "id",
+                "fieldFormat": {
+                  "type": "number",
+                  "maximumFractionDigits": 0,
+                  "minimumFractionDigits": 0,
+                  "style": "decimal",
+                  "useGrouping": "always"
+                },
+                "editAuthority": true,
+                "editable": true,
+                "visible": true
+              },
+              {
+                "jimuName": "wellbore_id",
+                "name": "wellbore_id",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeInteger",
+                "alias": "wellbore_id",
+                "fieldFormat": {
+                  "type": "number",
+                  "maximumFractionDigits": 2,
+                  "minimumFractionDigits": 0,
+                  "style": "decimal",
+                  "useGrouping": "always"
+                },
+                "editAuthority": true,
+                "editable": true,
+                "visible": true
+              },
+              {
+                "jimuName": "record_type",
+                "name": "record_type",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "record_type",
+                "editAuthority": true,
+                "editable": true,
+                "visible": true
+              },
+              {
+                "jimuName": "oil_or_gas_code",
+                "name": "oil_or_gas_code",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "oil_or_gas_code",
+                "editAuthority": true,
+                "editable": true,
+                "visible": true
+              },
+              {
+                "jimuName": "oil_district",
+                "name": "oil_district",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "oil_district",
+                "editAuthority": true,
+                "editable": true,
+                "visible": true
+              },
+              {
+                "jimuName": "oil_lease_number",
+                "name": "oil_lease_number",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "oil_lease_number",
+                "editAuthority": true,
+                "editable": true,
+                "visible": true
+              },
+              {
+                "jimuName": "oil_well_number",
+                "name": "oil_well_number",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "oil_well_number",
+                "editAuthority": true,
+                "editable": true,
+                "visible": true
+              },
+              {
+                "jimuName": "gas_rrc_id",
+                "name": "gas_rrc_id",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "gas_rrc_id",
+                "editAuthority": true,
+                "editable": true,
+                "visible": true
+              },
+              {
+                "jimuName": "gas_district",
+                "name": "gas_district",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "gas_district",
+                "editAuthority": true,
+                "editable": true,
+                "visible": true
+              },
+              {
+                "jimuName": "gas_well_number",
+                "name": "gas_well_number",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "gas_well_number",
+                "editAuthority": true,
+                "editable": true,
+                "visible": true
+              },
+              {
+                "jimuName": "api_suffix",
+                "name": "api_suffix",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "api_suffix",
+                "editAuthority": true,
+                "editable": true,
+                "visible": true
+              },
+              {
+                "jimuName": "active_inactive_code",
+                "name": "active_inactive_code",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "active_inactive_code",
+                "editAuthority": true,
+                "editable": true,
+                "visible": true
+              },
+              {
+                "jimuName": "dwn_hole_commingle",
+                "name": "dwn_hole_commingle",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "dwn_hole_commingle",
+                "editAuthority": true,
+                "editable": true,
+                "visible": true
+              },
+              {
+                "jimuName": "rule_37_nbr",
+                "name": "rule_37_nbr",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "rule_37_nbr",
+                "editAuthority": true,
+                "editable": true,
+                "visible": true
+              },
+              {
+                "jimuName": "plug_date_pointer",
+                "name": "plug_date_pointer",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "plug_date_pointer",
+                "editAuthority": true,
+                "editable": true,
+                "visible": true
+              },
+              {
+                "jimuName": "api_number",
+                "name": "api_number",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "api_number",
+                "editAuthority": true,
+                "editable": true,
+                "visible": true
+              },
+              {
+                "jimuName": "plug_flag",
+                "name": "plug_flag",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "plug_flag",
+                "editAuthority": true,
+                "editable": true,
+                "visible": true
+              },
+              {
+                "jimuName": "lease_name",
+                "name": "lease_name",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "lease_name",
+                "editAuthority": true,
+                "editable": true,
+                "visible": true
+              },
+              {
+                "jimuName": "within_2mi",
+                "name": "within_2mi",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "within_2mi",
+                "editAuthority": true,
+                "editable": true,
+                "visible": false
+              },
+              {
+                "jimuName": "within_1mi",
+                "name": "within_1mi",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "within_1mi",
+                "editAuthority": true,
+                "editable": true,
+                "visible": false
+              },
+              {
+                "jimuName": "within_0p5mi",
+                "name": "within_0p5mi",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "within_0p5mi",
+                "editAuthority": true,
+                "editable": true,
+                "visible": false
+              }
+            ],
+            "overrideGeneralSettings": false,
+            "enableAttachments": false,
+            "enableEdit": false,
+            "allowCsv": false,
+            "enableSearch": false,
+            "searchFields": [],
+            "enableRefresh": true,
+            "enableShowHideColumn": true,
+            "enableSelect": true,
+            "enableDelete": false,
+            "selectMode": "SINGLE",
+            "showCount": true,
+            "headerFontSetting": {
+              "backgroundColor": "",
+              "fontSize": 14,
+              "bold": false,
+              "color": ""
+            },
+            "columnSetting": {
+              "responsiveType": "FIXED",
+              "columnWidth": 200,
+              "wrapText": false,
+              "textAlign": "start"
+            },
+            "layerHonorMode": "CUSTOM"
+          },
+          {
+            "id": "dataSource_1-aa18ae600ec04187bcb12123d72d1f29-19e231757bd-layer-18-4",
+            "name": "Plugged Location",
+            "useDataSource": {
+              "dataSourceId": "dataSource_1-aa18ae600ec04187bcb12123d72d1f29-19e231757bd-layer-18",
+              "mainDataSourceId": "dataSource_1-aa18ae600ec04187bcb12123d72d1f29-19e231757bd-layer-18",
+              "rootDataSourceId": "dataSource_1",
+              "fields": [
+                "id",
+                "wellbore_id",
+                "record_type",
+                "oil_or_gas_code",
+                "oil_district",
+                "oil_lease_number",
+                "oil_well_number",
+                "gas_rrc_id",
+                "gas_district",
+                "gas_well_number",
+                "api_suffix",
+                "active_inactive_code",
+                "dwn_hole_commingle",
+                "rule_37_nbr",
+                "plug_date_pointer",
+                "api_number",
+                "plug_flag",
+                "lease_name",
+                "within_2mi",
+                "within_1mi",
+                "within_0p5mi"
+              ]
+            },
+            "allFields": [
+              {
+                "jimuName": "fid",
+                "name": "fid",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeOID",
+                "alias": "fid",
+                "fieldFormat": {
+                  "type": "number",
+                  "useGrouping": "never"
+                }
+              },
+              {
+                "jimuName": "id",
+                "name": "id",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeBigInteger",
+                "alias": "id",
+                "fieldFormat": {
+                  "type": "number",
+                  "maximumFractionDigits": 0,
+                  "minimumFractionDigits": 0,
+                  "style": "decimal",
+                  "useGrouping": "always"
+                }
+              },
+              {
+                "jimuName": "wellbore_id",
+                "name": "wellbore_id",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeInteger",
+                "alias": "wellbore_id",
+                "fieldFormat": {
+                  "type": "number",
+                  "maximumFractionDigits": 2,
+                  "minimumFractionDigits": 0,
+                  "style": "decimal",
+                  "useGrouping": "always"
+                }
+              },
+              {
+                "jimuName": "record_type",
+                "name": "record_type",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "record_type"
+              },
+              {
+                "jimuName": "oil_or_gas_code",
+                "name": "oil_or_gas_code",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "oil_or_gas_code"
+              },
+              {
+                "jimuName": "oil_district",
+                "name": "oil_district",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "oil_district"
+              },
+              {
+                "jimuName": "oil_lease_number",
+                "name": "oil_lease_number",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "oil_lease_number"
+              },
+              {
+                "jimuName": "oil_well_number",
+                "name": "oil_well_number",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "oil_well_number"
+              },
+              {
+                "jimuName": "gas_rrc_id",
+                "name": "gas_rrc_id",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "gas_rrc_id"
+              },
+              {
+                "jimuName": "gas_district",
+                "name": "gas_district",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "gas_district"
+              },
+              {
+                "jimuName": "gas_well_number",
+                "name": "gas_well_number",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "gas_well_number"
+              },
+              {
+                "jimuName": "api_suffix",
+                "name": "api_suffix",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "api_suffix"
+              },
+              {
+                "jimuName": "active_inactive_code",
+                "name": "active_inactive_code",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "active_inactive_code"
+              },
+              {
+                "jimuName": "dwn_hole_commingle",
+                "name": "dwn_hole_commingle",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "dwn_hole_commingle"
+              },
+              {
+                "jimuName": "rule_37_nbr",
+                "name": "rule_37_nbr",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "rule_37_nbr"
+              },
+              {
+                "jimuName": "plug_date_pointer",
+                "name": "plug_date_pointer",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "plug_date_pointer"
+              },
+              {
+                "jimuName": "api_number",
+                "name": "api_number",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "api_number"
+              },
+              {
+                "jimuName": "plug_flag",
+                "name": "plug_flag",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "plug_flag"
+              },
+              {
+                "jimuName": "lease_name",
+                "name": "lease_name",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "lease_name"
+              },
+              {
+                "jimuName": "within_2mi",
+                "name": "within_2mi",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "within_2mi"
+              },
+              {
+                "jimuName": "within_1mi",
+                "name": "within_1mi",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "within_1mi"
+              },
+              {
+                "jimuName": "within_0p5mi",
+                "name": "within_0p5mi",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "within_0p5mi"
+              }
+            ],
+            "tableFields": [
+              {
+                "jimuName": "id",
+                "name": "id",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeBigInteger",
+                "alias": "id",
+                "fieldFormat": {
+                  "type": "number",
+                  "maximumFractionDigits": 0,
+                  "minimumFractionDigits": 0,
+                  "style": "decimal",
+                  "useGrouping": "always"
+                },
+                "editAuthority": true,
+                "editable": true,
+                "visible": true
+              },
+              {
+                "jimuName": "wellbore_id",
+                "name": "wellbore_id",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeInteger",
+                "alias": "wellbore_id",
+                "fieldFormat": {
+                  "type": "number",
+                  "maximumFractionDigits": 2,
+                  "minimumFractionDigits": 0,
+                  "style": "decimal",
+                  "useGrouping": "always"
+                },
+                "editAuthority": true,
+                "editable": true,
+                "visible": true
+              },
+              {
+                "jimuName": "record_type",
+                "name": "record_type",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "record_type",
+                "editAuthority": true,
+                "editable": true,
+                "visible": true
+              },
+              {
+                "jimuName": "oil_or_gas_code",
+                "name": "oil_or_gas_code",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "oil_or_gas_code",
+                "editAuthority": true,
+                "editable": true,
+                "visible": true
+              },
+              {
+                "jimuName": "oil_district",
+                "name": "oil_district",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "oil_district",
+                "editAuthority": true,
+                "editable": true,
+                "visible": true
+              },
+              {
+                "jimuName": "oil_lease_number",
+                "name": "oil_lease_number",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "oil_lease_number",
+                "editAuthority": true,
+                "editable": true,
+                "visible": true
+              },
+              {
+                "jimuName": "oil_well_number",
+                "name": "oil_well_number",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "oil_well_number",
+                "editAuthority": true,
+                "editable": true,
+                "visible": true
+              },
+              {
+                "jimuName": "gas_rrc_id",
+                "name": "gas_rrc_id",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "gas_rrc_id",
+                "editAuthority": true,
+                "editable": true,
+                "visible": true
+              },
+              {
+                "jimuName": "gas_district",
+                "name": "gas_district",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "gas_district",
+                "editAuthority": true,
+                "editable": true,
+                "visible": true
+              },
+              {
+                "jimuName": "gas_well_number",
+                "name": "gas_well_number",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "gas_well_number",
+                "editAuthority": true,
+                "editable": true,
+                "visible": true
+              },
+              {
+                "jimuName": "api_suffix",
+                "name": "api_suffix",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "api_suffix",
+                "editAuthority": true,
+                "editable": true,
+                "visible": true
+              },
+              {
+                "jimuName": "active_inactive_code",
+                "name": "active_inactive_code",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "active_inactive_code",
+                "editAuthority": true,
+                "editable": true,
+                "visible": true
+              },
+              {
+                "jimuName": "dwn_hole_commingle",
+                "name": "dwn_hole_commingle",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "dwn_hole_commingle",
+                "editAuthority": true,
+                "editable": true,
+                "visible": true
+              },
+              {
+                "jimuName": "rule_37_nbr",
+                "name": "rule_37_nbr",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "rule_37_nbr",
+                "editAuthority": true,
+                "editable": true,
+                "visible": true
+              },
+              {
+                "jimuName": "plug_date_pointer",
+                "name": "plug_date_pointer",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "plug_date_pointer",
+                "editAuthority": true,
+                "editable": true,
+                "visible": true
+              },
+              {
+                "jimuName": "api_number",
+                "name": "api_number",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "api_number",
+                "editAuthority": true,
+                "editable": true,
+                "visible": true
+              },
+              {
+                "jimuName": "plug_flag",
+                "name": "plug_flag",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "plug_flag",
+                "editAuthority": true,
+                "editable": true,
+                "visible": true
+              },
+              {
+                "jimuName": "lease_name",
+                "name": "lease_name",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "lease_name",
+                "editAuthority": true,
+                "editable": true,
+                "visible": true
+              },
+              {
+                "jimuName": "within_2mi",
+                "name": "within_2mi",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "within_2mi",
+                "editAuthority": true,
+                "editable": true,
+                "visible": false
+              },
+              {
+                "jimuName": "within_1mi",
+                "name": "within_1mi",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "within_1mi",
+                "editAuthority": true,
+                "editable": true,
+                "visible": false
+              },
+              {
+                "jimuName": "within_0p5mi",
+                "name": "within_0p5mi",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "within_0p5mi",
+                "editAuthority": true,
+                "editable": true,
+                "visible": false
+              }
+            ],
+            "overrideGeneralSettings": false,
+            "enableAttachments": false,
+            "enableEdit": false,
+            "allowCsv": false,
+            "enableSearch": false,
+            "searchFields": [],
+            "enableRefresh": true,
+            "enableShowHideColumn": true,
+            "enableSelect": true,
+            "enableDelete": false,
+            "selectMode": "SINGLE",
+            "showCount": true,
+            "headerFontSetting": {
+              "backgroundColor": "",
+              "fontSize": 14,
+              "bold": false,
+              "color": ""
+            },
+            "columnSetting": {
+              "responsiveType": "FIXED",
+              "columnWidth": 200,
+              "wrapText": false,
+              "textAlign": "start"
+            },
+            "layerHonorMode": "CUSTOM"
+          },
+          {
+            "id": "dataSource_1-aa18ae600ec04187bcb12123d72d1f29-19e2317c069-layer-19-5",
+            "name": "Not Drilled / Unknown",
+            "useDataSource": {
+              "dataSourceId": "dataSource_1-aa18ae600ec04187bcb12123d72d1f29-19e2317c069-layer-19",
+              "mainDataSourceId": "dataSource_1-aa18ae600ec04187bcb12123d72d1f29-19e2317c069-layer-19",
+              "rootDataSourceId": "dataSource_1",
+              "fields": [
+                "id",
+                "wellbore_id",
+                "record_type",
+                "oil_or_gas_code",
+                "oil_district",
+                "oil_lease_number",
+                "oil_well_number",
+                "gas_rrc_id",
+                "gas_district",
+                "gas_well_number",
+                "api_suffix",
+                "active_inactive_code",
+                "dwn_hole_commingle",
+                "rule_37_nbr",
+                "plug_date_pointer",
+                "api_number",
+                "plug_flag",
+                "lease_name",
+                "within_2mi",
+                "within_1mi",
+                "within_0p5mi"
+              ]
+            },
+            "allFields": [
+              {
+                "jimuName": "fid",
+                "name": "fid",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeOID",
+                "alias": "fid",
+                "fieldFormat": {
+                  "type": "number",
+                  "useGrouping": "never"
+                }
+              },
+              {
+                "jimuName": "id",
+                "name": "id",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeBigInteger",
+                "alias": "id",
+                "fieldFormat": {
+                  "type": "number",
+                  "maximumFractionDigits": 0,
+                  "minimumFractionDigits": 0,
+                  "style": "decimal",
+                  "useGrouping": "always"
+                }
+              },
+              {
+                "jimuName": "wellbore_id",
+                "name": "wellbore_id",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeInteger",
+                "alias": "wellbore_id",
+                "fieldFormat": {
+                  "type": "number",
+                  "maximumFractionDigits": 2,
+                  "minimumFractionDigits": 0,
+                  "style": "decimal",
+                  "useGrouping": "always"
+                }
+              },
+              {
+                "jimuName": "record_type",
+                "name": "record_type",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "record_type"
+              },
+              {
+                "jimuName": "oil_or_gas_code",
+                "name": "oil_or_gas_code",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "oil_or_gas_code"
+              },
+              {
+                "jimuName": "oil_district",
+                "name": "oil_district",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "oil_district"
+              },
+              {
+                "jimuName": "oil_lease_number",
+                "name": "oil_lease_number",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "oil_lease_number"
+              },
+              {
+                "jimuName": "oil_well_number",
+                "name": "oil_well_number",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "oil_well_number"
+              },
+              {
+                "jimuName": "gas_rrc_id",
+                "name": "gas_rrc_id",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "gas_rrc_id"
+              },
+              {
+                "jimuName": "gas_district",
+                "name": "gas_district",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "gas_district"
+              },
+              {
+                "jimuName": "gas_well_number",
+                "name": "gas_well_number",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "gas_well_number"
+              },
+              {
+                "jimuName": "api_suffix",
+                "name": "api_suffix",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "api_suffix"
+              },
+              {
+                "jimuName": "active_inactive_code",
+                "name": "active_inactive_code",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "active_inactive_code"
+              },
+              {
+                "jimuName": "dwn_hole_commingle",
+                "name": "dwn_hole_commingle",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "dwn_hole_commingle"
+              },
+              {
+                "jimuName": "rule_37_nbr",
+                "name": "rule_37_nbr",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "rule_37_nbr"
+              },
+              {
+                "jimuName": "plug_date_pointer",
+                "name": "plug_date_pointer",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "plug_date_pointer"
+              },
+              {
+                "jimuName": "api_number",
+                "name": "api_number",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "api_number"
+              },
+              {
+                "jimuName": "plug_flag",
+                "name": "plug_flag",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "plug_flag"
+              },
+              {
+                "jimuName": "lease_name",
+                "name": "lease_name",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "lease_name"
+              },
+              {
+                "jimuName": "within_2mi",
+                "name": "within_2mi",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "within_2mi"
+              },
+              {
+                "jimuName": "within_1mi",
+                "name": "within_1mi",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "within_1mi"
+              },
+              {
+                "jimuName": "within_0p5mi",
+                "name": "within_0p5mi",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "within_0p5mi"
+              }
+            ],
+            "tableFields": [
+              {
+                "jimuName": "id",
+                "name": "id",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeBigInteger",
+                "alias": "id",
+                "fieldFormat": {
+                  "type": "number",
+                  "maximumFractionDigits": 0,
+                  "minimumFractionDigits": 0,
+                  "style": "decimal",
+                  "useGrouping": "always"
+                },
+                "editAuthority": true,
+                "editable": true,
+                "visible": true
+              },
+              {
+                "jimuName": "wellbore_id",
+                "name": "wellbore_id",
+                "type": "NUMBER",
+                "esriType": "esriFieldTypeInteger",
+                "alias": "wellbore_id",
+                "fieldFormat": {
+                  "type": "number",
+                  "maximumFractionDigits": 2,
+                  "minimumFractionDigits": 0,
+                  "style": "decimal",
+                  "useGrouping": "always"
+                },
+                "editAuthority": true,
+                "editable": true,
+                "visible": true
+              },
+              {
+                "jimuName": "record_type",
+                "name": "record_type",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "record_type",
+                "editAuthority": true,
+                "editable": true,
+                "visible": true
+              },
+              {
+                "jimuName": "oil_or_gas_code",
+                "name": "oil_or_gas_code",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "oil_or_gas_code",
+                "editAuthority": true,
+                "editable": true,
+                "visible": true
+              },
+              {
+                "jimuName": "oil_district",
+                "name": "oil_district",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "oil_district",
+                "editAuthority": true,
+                "editable": true,
+                "visible": true
+              },
+              {
+                "jimuName": "oil_lease_number",
+                "name": "oil_lease_number",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "oil_lease_number",
+                "editAuthority": true,
+                "editable": true,
+                "visible": true
+              },
+              {
+                "jimuName": "oil_well_number",
+                "name": "oil_well_number",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "oil_well_number",
+                "editAuthority": true,
+                "editable": true,
+                "visible": true
+              },
+              {
+                "jimuName": "gas_rrc_id",
+                "name": "gas_rrc_id",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "gas_rrc_id",
+                "editAuthority": true,
+                "editable": true,
+                "visible": true
+              },
+              {
+                "jimuName": "gas_district",
+                "name": "gas_district",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "gas_district",
+                "editAuthority": true,
+                "editable": true,
+                "visible": true
+              },
+              {
+                "jimuName": "gas_well_number",
+                "name": "gas_well_number",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "gas_well_number",
+                "editAuthority": true,
+                "editable": true,
+                "visible": true
+              },
+              {
+                "jimuName": "api_suffix",
+                "name": "api_suffix",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "api_suffix",
+                "editAuthority": true,
+                "editable": true,
+                "visible": true
+              },
+              {
+                "jimuName": "active_inactive_code",
+                "name": "active_inactive_code",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "active_inactive_code",
+                "editAuthority": true,
+                "editable": true,
+                "visible": true
+              },
+              {
+                "jimuName": "dwn_hole_commingle",
+                "name": "dwn_hole_commingle",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "dwn_hole_commingle",
+                "editAuthority": true,
+                "editable": true,
+                "visible": true
+              },
+              {
+                "jimuName": "rule_37_nbr",
+                "name": "rule_37_nbr",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "rule_37_nbr",
+                "editAuthority": true,
+                "editable": true,
+                "visible": true
+              },
+              {
+                "jimuName": "plug_date_pointer",
+                "name": "plug_date_pointer",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "plug_date_pointer",
+                "editAuthority": true,
+                "editable": true,
+                "visible": true
+              },
+              {
+                "jimuName": "api_number",
+                "name": "api_number",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "api_number",
+                "editAuthority": true,
+                "editable": true,
+                "visible": true
+              },
+              {
+                "jimuName": "plug_flag",
+                "name": "plug_flag",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "plug_flag",
+                "editAuthority": true,
+                "editable": true,
+                "visible": true
+              },
+              {
+                "jimuName": "lease_name",
+                "name": "lease_name",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "lease_name",
+                "editAuthority": true,
+                "editable": true,
+                "visible": true
+              },
+              {
+                "jimuName": "within_2mi",
+                "name": "within_2mi",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "within_2mi",
+                "editAuthority": true,
+                "editable": true,
+                "visible": false
+              },
+              {
+                "jimuName": "within_1mi",
+                "name": "within_1mi",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "within_1mi",
+                "editAuthority": true,
+                "editable": true,
+                "visible": false
+              },
+              {
+                "jimuName": "within_0p5mi",
+                "name": "within_0p5mi",
+                "type": "STRING",
+                "esriType": "esriFieldTypeString",
+                "alias": "within_0p5mi",
+                "editAuthority": true,
+                "editable": true,
+                "visible": false
+              }
+            ],
+            "overrideGeneralSettings": false,
+            "enableAttachments": false,
+            "enableEdit": false,
+            "allowCsv": false,
+            "enableSearch": false,
+            "searchFields": [],
+            "enableRefresh": true,
+            "enableShowHideColumn": true,
+            "enableSelect": true,
+            "enableDelete": false,
+            "selectMode": "SINGLE",
+            "showCount": true,
+            "headerFontSetting": {
+              "backgroundColor": "",
+              "fontSize": 14,
+              "bold": false,
+              "color": ""
+            },
+            "columnSetting": {
+              "responsiveType": "FIXED",
+              "columnWidth": 200,
+              "wrapText": false,
+              "textAlign": "start"
+            },
+            "layerHonorMode": "CUSTOM",
+            "isFreezeFields": false
           }
         ],
         "mapViewsConfig": {},
@@ -3077,67 +4310,51 @@
       "label": "Table",
       "useDataSources": [
         {
-          "dataSourceId": "dataSource_1-db71d9a369b1484bb902acb1b313eab7",
-          "mainDataSourceId": "dataSource_1-db71d9a369b1484bb902acb1b313eab7",
+          "dataSourceId": "dataSource_1-19e269abeb3-layer-19",
+          "mainDataSourceId": "dataSource_1-19e269abeb3-layer-19",
           "rootDataSourceId": "dataSource_1",
           "fields": [
-            "OBJECTID",
-            "Name",
-            "Address",
-            "Town",
-            "State",
-            "NEAR_FID",
-            "NEAR_FID_Wells_TXSP",
-            "WellCt_2mi",
-            "WellCt_1mi",
-            "WellCt_halfmi",
-            "Pad_1",
-            "Pad_2",
-            "Pad_3",
-            "Pad_4",
-            "Pad_5",
-            "Pad_6",
-            "Pad_7",
-            "Pad_8",
-            "Pad_9",
-            "Pad_10",
-            "Pad_11",
-            "Pad_12",
-            "Pad_13"
-          ]
-        },
-        {
-          "dataSourceId": "dataSource_1-4dd20c61c23a4439a67be06486c9b4cc",
-          "mainDataSourceId": "dataSource_1-4dd20c61c23a4439a67be06486c9b4cc",
-          "rootDataSourceId": "dataSource_1",
-          "fields": [
-            "FID",
-            "OBJECTID",
-            "TotalAcres",
-            "Maintenanc",
-            "CityCounci",
-            "Cartegraph",
-            "Shape__Area",
-            "Shape__Length"
-          ]
-        },
-        {
-          "dataSourceId": "dataSource_1-aa18ae600ec04187bcb12123d72d1f29-4034e6d9dff24658a2d4ebf782d69cac",
-          "mainDataSourceId": "dataSource_1-aa18ae600ec04187bcb12123d72d1f29-4034e6d9dff24658a2d4ebf782d69cac",
-          "rootDataSourceId": "dataSource_1",
-          "fields": [
-            "FID",
-            "SURFACE_ID",
-            "SYMNUM",
-            "API",
-            "RELIAB",
-            "LONG27",
-            "LAT27",
-            "LONG83",
-            "LAT83",
-            "WELLID",
-            "NearArl2mi",
-            "Status"
+            "latitude",
+            "longitude",
+            "name",
+            "address",
+            "town",
+            "state",
+            "drilled_wells_2mi",
+            "drilled_wells_1mi",
+            "drilled_wells_halfmi",
+            "plugged_wells_2mi",
+            "plugged_wells_1mi",
+            "plugged_wells_halfmi",
+            "notdrilled_wells_2mi",
+            "notdrilled_wells_1mi",
+            "notdrilled_wells_halfmi",
+            "total_wells_2mi",
+            "total_wells_1mi",
+            "total_wells_halfmi",
+            "arlington_wellpads_2mi",
+            "new_wellpads_2mi",
+            "total_wellpads_2mi",
+            "arlington_pad_1",
+            "arlington_pad_2",
+            "arlington_pad_3",
+            "arlington_pad_4",
+            "arlington_pad_5",
+            "arlington_pad_6",
+            "arlington_pad_7",
+            "arlington_pad_8",
+            "arlington_pad_9",
+            "arlington_pad_10",
+            "other_pad_1",
+            "other_pad_2",
+            "other_pad_3",
+            "other_pad_4",
+            "other_pad_5",
+            "other_pad_6",
+            "other_pad_7",
+            "other_pad_8",
+            "other_pad_9",
+            "other_pad_10"
           ]
         },
         {
@@ -3153,6 +4370,90 @@
             "SiteOperator",
             "Shape__Area",
             "Shape__Length"
+          ]
+        },
+        {
+          "dataSourceId": "dataSource_1-aa18ae600ec04187bcb12123d72d1f29-19e231623c9-layer-17",
+          "mainDataSourceId": "dataSource_1-aa18ae600ec04187bcb12123d72d1f29-19e231623c9-layer-17",
+          "rootDataSourceId": "dataSource_1",
+          "fields": [
+            "id",
+            "wellbore_id",
+            "record_type",
+            "oil_or_gas_code",
+            "oil_district",
+            "oil_lease_number",
+            "oil_well_number",
+            "gas_rrc_id",
+            "gas_district",
+            "gas_well_number",
+            "api_suffix",
+            "active_inactive_code",
+            "dwn_hole_commingle",
+            "rule_37_nbr",
+            "plug_date_pointer",
+            "api_number",
+            "plug_flag",
+            "lease_name",
+            "within_2mi",
+            "within_1mi",
+            "within_0p5mi"
+          ]
+        },
+        {
+          "dataSourceId": "dataSource_1-aa18ae600ec04187bcb12123d72d1f29-19e231757bd-layer-18",
+          "mainDataSourceId": "dataSource_1-aa18ae600ec04187bcb12123d72d1f29-19e231757bd-layer-18",
+          "rootDataSourceId": "dataSource_1",
+          "fields": [
+            "id",
+            "wellbore_id",
+            "record_type",
+            "oil_or_gas_code",
+            "oil_district",
+            "oil_lease_number",
+            "oil_well_number",
+            "gas_rrc_id",
+            "gas_district",
+            "gas_well_number",
+            "api_suffix",
+            "active_inactive_code",
+            "dwn_hole_commingle",
+            "rule_37_nbr",
+            "plug_date_pointer",
+            "api_number",
+            "plug_flag",
+            "lease_name",
+            "within_2mi",
+            "within_1mi",
+            "within_0p5mi"
+          ]
+        },
+        {
+          "dataSourceId": "dataSource_1-aa18ae600ec04187bcb12123d72d1f29-19e2317c069-layer-19",
+          "mainDataSourceId": "dataSource_1-aa18ae600ec04187bcb12123d72d1f29-19e2317c069-layer-19",
+          "rootDataSourceId": "dataSource_1",
+          "fields": [
+            "id",
+            "wellbore_id",
+            "record_type",
+            "oil_or_gas_code",
+            "oil_district",
+            "oil_lease_number",
+            "oil_well_number",
+            "gas_rrc_id",
+            "gas_district",
+            "gas_well_number",
+            "api_suffix",
+            "active_inactive_code",
+            "dwn_hole_commingle",
+            "rule_37_nbr",
+            "plug_date_pointer",
+            "api_number",
+            "plug_flag",
+            "lease_name",
+            "within_2mi",
+            "within_1mi",
+            "within_0p5mi"
           ]
         }
       ]
@@ -3640,7 +4941,7 @@
       "version": "1.20.0",
       "label": "Text 4",
       "config": {
-        "text": "<p><span style=\"font-size: 16px; color: rgb(0, 37, 59);\">﻿</span><strong style=\"font-size: 16px; color: rgb(0, 37, 59); font-family: &quot;Avenir Next&quot;; letter-spacing: normal;\">Data sources</strong></p><p><br></p><p><strong style=\"color: rgb(0, 37, 59); font-family: &quot;Avenir Next&quot;; font-size: 14px; letter-spacing: normal;\">Name:&nbsp;</strong><span style=\"color: rgb(0, 37, 59); font-family: &quot;Avenir Next&quot;; font-size: 14px; letter-spacing: normal;\">&nbsp;Well location, laterals and termini </span><strong style=\"color: rgb(0, 37, 59); font-family: &quot;Avenir Next&quot;; font-size: 14px; letter-spacing: normal;\">Date:&nbsp;</strong><span style=\"color: rgb(0, 37, 59); font-family: &quot;Avenir Next&quot;; font-size: 14px; letter-spacing: normal;\">2026, Downloaded on April 30, 2026 </span><strong style=\"color: rgb(0, 37, 59); font-family: &quot;Avenir Next&quot;; font-size: 14px; letter-spacing: normal;\">Source:</strong><span style=\"color: rgb(0, 37, 59); font-family: &quot;Avenir Next&quot;; font-size: 14px; letter-spacing: normal;\">&nbsp;&nbsp;FracTracker Alliance, based on data from&nbsp;</span><u style=\"color: rgb(0, 37, 59); font-family: &quot;Avenir Next&quot;; font-size: 14px; letter-spacing: normal;\"><a href=\"https://mft.rrc.texas.gov/link/d551fb20-442e-4b67-84fa-ac3f23ecabb4\" target=\"_blank\" data-uniqueid=\"\" data-dsid=\"\" data-link=\"null\">Texas Railroad Commission</a></u></p><p><br></p><p><strong style=\"color: rgb(0, 37, 59); font-family: &quot;Avenir Next&quot;; font-size: 14px; letter-spacing: normal;\">Name:&nbsp;</strong><span style=\"color: rgb(0, 37, 59); font-family: &quot;Avenir Next&quot;; font-size: 14px; letter-spacing: normal;\">&nbsp;Buffers around compressors and schools </span><strong style=\"color: rgb(0, 37, 59); font-family: &quot;Avenir Next&quot;; font-size: 14px; letter-spacing: normal;\">Date:&nbsp;</strong><span style=\"color: rgb(0, 37, 59); font-family: &quot;Avenir Next&quot;; font-size: 14px; letter-spacing: normal;\">2026 </span><strong style=\"color: rgb(0, 37, 59); font-family: &quot;Avenir Next&quot;; font-size: 14px; letter-spacing: normal;\">Source:</strong><span style=\"color: rgb(0, 37, 59); font-family: &quot;Avenir Next&quot;; font-size: 14px; letter-spacing: normal;\">&nbsp;&nbsp;FracTracker Alliance, generated in ArcGIS Pro&nbsp;</span></p><p><br></p><p><strong style=\"color: rgb(0, 37, 59); font-family: &quot;Avenir Next&quot;; font-size: 14px; letter-spacing: normal;\">﻿Name:&nbsp;</strong><span style=\"color: rgb(0, 37, 59); font-family: &quot;Avenir Next&quot;; font-size: 14px; letter-spacing: normal;\">Public parks </span><strong style=\"color: rgb(0, 37, 59); font-family: &quot;Avenir Next&quot;; font-size: 14px; letter-spacing: normal;\">Date:&nbsp;</strong><span style=\"color: rgb(0, 37, 59); font-family: &quot;Avenir Next&quot;; font-size: 14px; letter-spacing: normal;\">2026 </span><strong style=\"color: rgb(0, 37, 59); font-family: &quot;Avenir Next&quot;; font-size: 14px; letter-spacing: normal;\">Source:</strong><span style=\"color: rgb(0, 37, 59); font-family: &quot;Avenir Next&quot;; font-size: 14px; letter-spacing: normal;\">&nbsp;&nbsp;Downloaded by FracTracker Alliance, January 5, 2026 from&nbsp;</span><u style=\"color: rgb(0, 37, 59); font-family: &quot;Avenir Next&quot;; font-size: 14px; letter-spacing: normal;\"><a href=\"https://opendata.arlingtontx.gov/datasets/arlingtontx::parks-property/explore\" target=\"_blank\" data-uniqueid=\"\" data-dsid=\"\" data-link=\"null\">Arlington Open Data Center</a></u></p><p><br></p><p><strong style=\"color: rgb(0, 37, 59); font-family: &quot;Avenir Next&quot;; font-size: 14px; letter-spacing: normal;\">Name:&nbsp;</strong><span style=\"color: rgb(0, 37, 59); font-family: &quot;Avenir Next&quot;; font-size: 14px; letter-spacing: normal;\">Arlington boundary </span><strong style=\"color: rgb(0, 37, 59); font-family: &quot;Avenir Next&quot;; font-size: 14px; letter-spacing: normal;\">Date:&nbsp;</strong><span style=\"color: rgb(0, 37, 59); font-family: &quot;Avenir Next&quot;; font-size: 14px; letter-spacing: normal;\">2026 </span><strong style=\"color: rgb(0, 37, 59); font-family: &quot;Avenir Next&quot;; font-size: 14px; letter-spacing: normal;\">Source:</strong><span style=\"color: rgb(0, 37, 59); font-family: &quot;Avenir Next&quot;; font-size: 14px; letter-spacing: normal;\">&nbsp;&nbsp;Downloaded by FracTracker Alliance, January 5, 2026 from&nbsp;</span><u style=\"color: rgb(0, 37, 59); font-family: &quot;Avenir Next&quot;; font-size: 14px; letter-spacing: normal;\"><a href=\"https://opendata.arlingtontx.gov/datasets/arlingtontx::municipal-boundary-2/explore\" target=\"_blank\" data-uniqueid=\"\" data-dsid=\"\" data-link=\"null\">Arlington Open Data Center</a></u></p><p><br></p><p><strong style=\"color: rgb(0, 37, 59); font-family: &quot;Avenir Next&quot;; font-size: 14px; letter-spacing: normal;\">Name:&nbsp;</strong><span style=\"color: rgb(0, 37, 59); font-family: &quot;Avenir Next&quot;; font-size: 14px; letter-spacing: normal;\">&nbsp;Compressor stations </span><strong style=\"color: rgb(0, 37, 59); font-family: &quot;Avenir Next&quot;; font-size: 14px; letter-spacing: normal;\">Date:&nbsp;</strong><span style=\"color: rgb(0, 37, 59); font-family: &quot;Avenir Next&quot;; font-size: 14px; letter-spacing: normal;\">2026 </span><strong style=\"color: rgb(0, 37, 59); font-family: &quot;Avenir Next&quot;; font-size: 14px; letter-spacing: normal;\">Source:</strong><span style=\"color: rgb(0, 37, 59); font-family: &quot;Avenir Next&quot;; font-size: 14px; letter-spacing: normal;\">&nbsp;&nbsp;Provided to FracTracker Alliance by Liveable Arlington </span></p><p><br></p><p><strong style=\"color: rgb(0, 37, 59); font-family: &quot;Avenir Next&quot;; font-size: 14px; letter-spacing: normal;\">﻿Name:&nbsp;</strong><span style=\"color: rgb(0, 37, 59); font-family: &quot;Avenir Next&quot;; font-size: 14px; letter-spacing: normal;\">&nbsp;Arlington school locations </span><strong style=\"color: rgb(0, 37, 59); font-family: &quot;Avenir Next&quot;; font-size: 14px; letter-spacing: normal;\">Date:&nbsp;</strong><span style=\"color: rgb(0, 37, 59); font-family: &quot;Avenir Next&quot;; font-size: 14px; letter-spacing: normal;\">2026 </span><strong style=\"color: rgb(0, 37, 59); font-family: &quot;Avenir Next&quot;; font-size: 14px; letter-spacing: normal;\">Source:</strong><span style=\"color: rgb(0, 37, 59); font-family: &quot;Avenir Next&quot;; font-size: 14px; letter-spacing: normal;\">&nbsp;&nbsp;Provided to FracTracker Alliance by Liveable Arlington </span></p><p><br></p><p><strong style=\"color: rgb(0, 37, 59); font-family: &quot;Avenir Next&quot;; font-size: 14px; letter-spacing: normal;\">Name:&nbsp;</strong><span style=\"color: rgb(0, 37, 59); font-family: &quot;Avenir Next&quot;; font-size: 14px; letter-spacing: normal;\">&nbsp;Well pads </span><strong style=\"color: rgb(0, 37, 59); font-family: &quot;Avenir Next&quot;; font-size: 14px; letter-spacing: normal;\">Date:&nbsp;</strong><span style=\"color: rgb(0, 37, 59); font-family: &quot;Avenir Next&quot;; font-size: 14px; letter-spacing: normal;\">2026 </span><strong style=\"color: rgb(0, 37, 59); font-family: &quot;Avenir Next&quot;; font-size: 14px; letter-spacing: normal;\">Source:</strong><span style=\"color: rgb(0, 37, 59); font-family: &quot;Avenir Next&quot;; font-size: 14px; letter-spacing: normal;\">&nbsp;&nbsp;</span><u style=\"color: rgb(0, 37, 59); font-family: &quot;Avenir Next&quot;; font-size: 14px; letter-spacing: normal;\"><a href=\"https://services.arcgis.com/jXi5GuMZwfCYtZP9/ArcGIS/rest/services/GasWell_ComplaintZones/FeatureServer/0\" target=\"_blank\" data-uniqueid=\"\" data-dsid=\"\" data-link=\"null\">ArcGIS Online</a></u></p><p><br></p><p><span style=\"color: rgb(0, 37, 59); font-family: &quot;Avenir Next&quot;; font-size: 14px; letter-spacing: normal;\">© Copyright 2026 FracTracker Alliance </span></p><p><span style=\"color: rgb(0, 37, 59); font-family: &quot;Avenir Next&quot;; font-size: 14px; letter-spacing: normal;\">﻿FracTracker Alliance&nbsp;</span><a href=\"https://www.fractracker.org/terms-of-service/\" target=\"_blank\" data-uniqueid=\"\" data-dsid=\"\" data-link=\"null\" style=\"color: rgb(2, 135, 212); font-family: &quot;Avenir Next&quot;; font-size: 14px; letter-spacing: normal;\">Terms of Service</a></p>",
+        "text": "<p><span style=\"color: rgb(0, 37, 59); font-size: 16px;\">﻿</span><strong style=\"color: rgb(0, 37, 59); font-size: 16px; letter-spacing: normal; font-family: &quot;Avenir Next&quot;;\">Data sources</strong></p><p><br></p><p><strong style=\"letter-spacing: normal; font-size: 14px; font-family: &quot;Avenir Next&quot;; color: rgb(0, 37, 59);\">Name:&nbsp;</strong><span style=\"letter-spacing: normal; font-size: 14px; font-family: &quot;Avenir Next&quot;; color: rgb(0, 37, 59);\">&nbsp;Well location, laterals and termini </span><strong style=\"letter-spacing: normal; font-size: 14px; font-family: &quot;Avenir Next&quot;; color: rgb(0, 37, 59);\">Date:&nbsp;</strong><span style=\"letter-spacing: normal; font-size: 14px; font-family: &quot;Avenir Next&quot;; color: rgb(0, 37, 59);\">2026, Downloaded on April 30, 2026 </span><strong style=\"letter-spacing: normal; font-size: 14px; font-family: &quot;Avenir Next&quot;; color: rgb(0, 37, 59);\">Source:</strong><span style=\"letter-spacing: normal; font-size: 14px; font-family: &quot;Avenir Next&quot;; color: rgb(0, 37, 59);\">&nbsp;&nbsp;FracTracker Alliance, based on data from&nbsp;</span><u style=\"letter-spacing: normal; font-size: 14px; font-family: &quot;Avenir Next&quot;; color: rgb(0, 37, 59);\"><a href=\"https://mft.rrc.texas.gov/link/d551fb20-442e-4b67-84fa-ac3f23ecabb4\" target=\"_blank\" data-uniqueid=\"\" data-dsid=\"\" data-link=\"null\">Texas Railroad Commission</a></u></p><p><br></p><p><strong style=\"letter-spacing: normal; font-size: 14px; font-family: &quot;Avenir Next&quot;; color: rgb(0, 37, 59);\">Name:&nbsp;</strong><span style=\"letter-spacing: normal; font-size: 14px; font-family: &quot;Avenir Next&quot;; color: rgb(0, 37, 59);\">&nbsp;Buffers around compressor stations and schools point locations </span><strong style=\"letter-spacing: normal; font-size: 14px; font-family: &quot;Avenir Next&quot;; color: rgb(0, 37, 59);\">Date:&nbsp;</strong><span style=\"letter-spacing: normal; font-size: 14px; font-family: &quot;Avenir Next&quot;; color: rgb(0, 37, 59);\">2026 </span><strong style=\"letter-spacing: normal; font-size: 14px; font-family: &quot;Avenir Next&quot;; color: rgb(0, 37, 59);\">Source:</strong><span style=\"letter-spacing: normal; font-size: 14px; font-family: &quot;Avenir Next&quot;; color: rgb(0, 37, 59);\">&nbsp;&nbsp;FracTracker Alliance, generated in ArcGIS Pro&nbsp;</span></p><p><br></p><p><strong style=\"letter-spacing: normal; font-size: 14px; font-family: &quot;Avenir Next&quot;; color: rgb(0, 37, 59);\">﻿Name:&nbsp;</strong><span style=\"letter-spacing: normal; font-size: 14px; font-family: &quot;Avenir Next&quot;; color: rgb(0, 37, 59);\">Public parks </span><strong style=\"letter-spacing: normal; font-size: 14px; font-family: &quot;Avenir Next&quot;; color: rgb(0, 37, 59);\">Date:&nbsp;</strong><span style=\"letter-spacing: normal; font-size: 14px; font-family: &quot;Avenir Next&quot;; color: rgb(0, 37, 59);\">2026 </span><strong style=\"letter-spacing: normal; font-size: 14px; font-family: &quot;Avenir Next&quot;; color: rgb(0, 37, 59);\">Source:</strong><span style=\"letter-spacing: normal; font-size: 14px; font-family: &quot;Avenir Next&quot;; color: rgb(0, 37, 59);\">&nbsp;&nbsp;Downloaded by FracTracker Alliance, January 5, 2026 from&nbsp;</span><u style=\"letter-spacing: normal; font-size: 14px; font-family: &quot;Avenir Next&quot;; color: rgb(0, 37, 59);\"><a href=\"https://opendata.arlingtontx.gov/datasets/arlingtontx::parks-property/explore\" target=\"_blank\" data-uniqueid=\"\" data-dsid=\"\" data-link=\"null\">Arlington Open Data Center</a></u></p><p><br></p><p><strong style=\"letter-spacing: normal; font-size: 14px; font-family: &quot;Avenir Next&quot;; color: rgb(0, 37, 59);\">Name:&nbsp;</strong><span style=\"letter-spacing: normal; font-size: 14px; font-family: &quot;Avenir Next&quot;; color: rgb(0, 37, 59);\">Arlington boundary </span><strong style=\"letter-spacing: normal; font-size: 14px; font-family: &quot;Avenir Next&quot;; color: rgb(0, 37, 59);\">Date:&nbsp;</strong><span style=\"letter-spacing: normal; font-size: 14px; font-family: &quot;Avenir Next&quot;; color: rgb(0, 37, 59);\">2026 </span><strong style=\"letter-spacing: normal; font-size: 14px; font-family: &quot;Avenir Next&quot;; color: rgb(0, 37, 59);\">Source:</strong><span style=\"letter-spacing: normal; font-size: 14px; font-family: &quot;Avenir Next&quot;; color: rgb(0, 37, 59);\">&nbsp;&nbsp;Downloaded by FracTracker Alliance, January 5, 2026 from&nbsp;</span><u style=\"letter-spacing: normal; font-size: 14px; font-family: &quot;Avenir Next&quot;; color: rgb(0, 37, 59);\"><a href=\"https://opendata.arlingtontx.gov/datasets/arlingtontx::municipal-boundary-2/explore\" target=\"_blank\" data-uniqueid=\"\" data-dsid=\"\" data-link=\"null\">Arlington Open Data Center</a></u></p><p><br></p><p><strong style=\"letter-spacing: normal; font-size: 14px; font-family: &quot;Avenir Next&quot;; color: rgb(0, 37, 59);\">Name:&nbsp;</strong><span style=\"letter-spacing: normal; font-size: 14px; font-family: &quot;Avenir Next&quot;; color: rgb(0, 37, 59);\">&nbsp;Compressor stations </span><strong style=\"letter-spacing: normal; font-size: 14px; font-family: &quot;Avenir Next&quot;; color: rgb(0, 37, 59);\">Date:&nbsp;</strong><span style=\"letter-spacing: normal; font-size: 14px; font-family: &quot;Avenir Next&quot;; color: rgb(0, 37, 59);\">2026 </span><strong style=\"letter-spacing: normal; font-size: 14px; font-family: &quot;Avenir Next&quot;; color: rgb(0, 37, 59);\">Source:</strong><span style=\"letter-spacing: normal; font-size: 14px; font-family: &quot;Avenir Next&quot;; color: rgb(0, 37, 59);\">&nbsp;&nbsp;Provided to FracTracker Alliance by Liveable Arlington </span></p><p><br></p><p><strong style=\"letter-spacing: normal; font-size: 14px; font-family: &quot;Avenir Next&quot;; color: rgb(0, 37, 59);\">﻿Name:&nbsp;</strong><span style=\"letter-spacing: normal; font-size: 14px; font-family: &quot;Avenir Next&quot;; color: rgb(0, 37, 59);\">&nbsp;Arlington school locations </span><strong style=\"letter-spacing: normal; font-size: 14px; font-family: &quot;Avenir Next&quot;; color: rgb(0, 37, 59);\">Date:&nbsp;</strong><span style=\"letter-spacing: normal; font-size: 14px; font-family: &quot;Avenir Next&quot;; color: rgb(0, 37, 59);\">2026 </span><strong style=\"letter-spacing: normal; font-size: 14px; font-family: &quot;Avenir Next&quot;; color: rgb(0, 37, 59);\">Source:</strong><span style=\"letter-spacing: normal; font-size: 14px; font-family: &quot;Avenir Next&quot;; color: rgb(0, 37, 59);\">&nbsp;&nbsp;Provided to FracTracker Alliance by Liveable Arlington </span></p><p><br></p><p><strong style=\"letter-spacing: normal; font-size: 14px; font-family: &quot;Avenir Next&quot;; color: rgb(0, 37, 59);\">Name:&nbsp;</strong><span style=\"letter-spacing: normal; font-size: 14px; font-family: &quot;Avenir Next&quot;; color: rgb(0, 37, 59);\">&nbsp;Well pads </span><strong style=\"letter-spacing: normal; font-size: 14px; font-family: &quot;Avenir Next&quot;; color: rgb(0, 37, 59);\">Date:&nbsp;</strong><span style=\"letter-spacing: normal; font-size: 14px; font-family: &quot;Avenir Next&quot;; color: rgb(0, 37, 59);\">2026 </span><strong style=\"letter-spacing: normal; font-size: 14px; font-family: &quot;Avenir Next&quot;; color: rgb(0, 37, 59);\">Source:</strong><span style=\"letter-spacing: normal; font-size: 14px; font-family: &quot;Avenir Next&quot;; color: rgb(0, 37, 59);\">&nbsp;&nbsp;</span><u style=\"letter-spacing: normal; font-size: 14px; font-family: &quot;Avenir Next&quot;; color: rgb(0, 37, 59);\"><a href=\"https://services.arcgis.com/jXi5GuMZwfCYtZP9/ArcGIS/rest/services/GasWell_ComplaintZones/FeatureServer/0\" target=\"_blank\" data-uniqueid=\"\" data-dsid=\"\" data-link=\"null\">ArcGIS Online</a></u></p><p><br></p><p><span style=\"letter-spacing: normal; font-size: 14px; font-family: &quot;Avenir Next&quot;; color: rgb(0, 37, 59);\">© Copyright 2026 FracTracker Alliance </span></p><p><span style=\"letter-spacing: normal; font-size: 14px; font-family: &quot;Avenir Next&quot;; color: rgb(0, 37, 59);\">﻿FracTracker Alliance&nbsp;</span><a href=\"https://www.fractracker.org/terms-of-service/\" target=\"_blank\" data-uniqueid=\"\" data-dsid=\"\" data-link=\"null\" style=\"letter-spacing: normal; font-size: 14px; font-family: &quot;Avenir Next&quot;; color: rgb(2, 135, 212);\">Terms of Service</a></p>",
         "placeholder": "Double click to edit text",
         "style": {
           "wrap": true
@@ -4033,7 +5334,7 @@
       }
     }
   },
-  "timestamp": 1778769773873,
+  "timestamp": 1782229034271,
   "sharedThemeVariables": {
     "header": {},
     "body": {},
